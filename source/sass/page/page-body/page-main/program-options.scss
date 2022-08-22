@@ -1,3 +1,25 @@
 .program-options__item {
   background-color: $grey-D9;
 }
+
+.program-options__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+
+.program-options__description {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $grey-dark-special-444;
+}
+
+.program-options__link {
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+}

@@ -2,6 +2,20 @@
   background-image: url("/source/img/promo/promo-background-cat.jpg");
   background-repeat: no-repeat;
   background-size: 320px 302px;
+  z-index: -2;
+}
+
+.promo__title {
+  font-size: 36px;
+  line-height: 36px;
+  color: $white;
+}
+
+.promo__slogan {
+  font-size: 14px;
+  line-height: 14px;
+  color: $white;
+  text-transform: uppercase;
 }
 
 .promo::before {
@@ -10,4 +24,5 @@
   width: 320px;
   height: 302px;
   background-color: rgba($green-basic, 0.85);
+  z-index: -1;
 }
