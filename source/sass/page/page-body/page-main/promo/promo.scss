@@ -1,0 +1,13 @@
+.promo {
+  background-image: url("/source/img/promo/promo-background-cat.jpg");
+  background-repeat: no-repeat;
+  background-size: 320px 302px;
+}
+
+.promo::before {
+  content: '';
+  position: absolute;
+  width: 320px;
+  height: 302px;
+  background-color: rgba($green-basic, 0.85);
+}
