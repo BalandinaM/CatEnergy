@@ -10,8 +10,19 @@
   color: $black;
 }
 
+.main-title {
+  font-size: 36px;
+  line-height: 36px;
+}
+
 .text {
   font-family: "Arial", sans-serif;
   font-style: normal;
   color: $grey-dark-special-444;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
