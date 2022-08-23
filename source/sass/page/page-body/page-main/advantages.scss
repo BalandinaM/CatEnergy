@@ -1,6 +1,16 @@
+.advantages__wrapper {
+  margin: 0 20px;
+  padding-bottom: 42px;
+}
+
 .advantages__title {
   font-size: 36px;
   line-height: 40px;
+}
+
+.advantages__list {
+  list-style: none;
+  padding: 0;
 }
 
 .advantages__item {

@@ -1,5 +1,16 @@
+.program-options__wrapper {
+  margin: 0 20px;
+}
+
+.program-options__list {
+  list-style: none;
+  padding: 0;
+}
+
 .program-options__item {
   background-color: $grey-D9;
+
+  padding: 30px 33px 18px 20px;
 }
 
 .program-options__title {
@@ -10,7 +21,7 @@
 }
 
 .program-options__description {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
