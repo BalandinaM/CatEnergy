@@ -1,8 +1,17 @@
 .promo {
-  background-image: url("/source/img/promo/promo-background-cat.jpg");
+  background-image: url('../../../../../img/promo/promo-background-cat.jpg');
   background-repeat: no-repeat;
   background-size: 320px 302px;
-  z-index: -2;
+  z-index: -1;
+}
+
+.promo::before {
+  content: '';
+  position: absolute;
+  width: 320px;
+  height: 302px;
+  background-color: rgba($green-basic, 0.85);
+  z-index: 0;
 }
 
 .promo__title {
@@ -18,11 +27,8 @@
   text-transform: uppercase;
 }
 
-.promo::before {
-  content: '';
-  position: absolute;
-  width: 320px;
-  height: 302px;
-  background-color: rgba($green-basic, 0.85);
-  z-index: -1;
+.promo__img {
+  position: relative;
+  z-index: 1;
 }
+
