@@ -1,0 +1,35 @@
+.form__subtitle {
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.form__text {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $grey-dark-special-444;
+}
+
+.form__input::placeholder {
+  font-family: "Oswald", "Arial", sans-serif;
+}
+
+.form__basic-info,
+.form__purpose,
+.form__contacts,
+.form__comments,
+.form__additionally {
+  border: none;
+}
+
+.form__button {
+  border: none;
+}
+
+.form__notice {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
