@@ -1,27 +1,28 @@
 // Global
 
-@import "global/variables.scss";
-@import "global/fonts.scss";
-@import "global/global.scss";
+@import 'global/variables.scss';
+@import 'global/fonts.scss';
+@import 'global/global.scss';
 
 
 // Blocks
 
-@import "page/page.scss";
-@import "page/page-body/page-body.scss";
-@import "page/page-body/page-header/page-header.scss";
-@import "page/page-body/page-header/main-nav.scss";
-@import "page/page-body/page-main/page-main.scss";
-@import "page/page-body/page-main/promo/promo.scss";
-@import "page/page-body/page-main/program-options.scss";
-@import "page/page-body/page-main/advantages.scss";
-@import "page/page-body/page-main/example/example.scss";
-@import "page/page-body/page-main/example/description/description.scss";
-@import "page/page-body/page-main/example/description/stats.scss";
-@import "page/page-body/page-main/example/slider/slider.scss";
-@import "page/page-body/page-main/example/slider/range.scss";
-@import "page/page-body/page-footer/page-footer.scss";
-@import "page/page-body/page-footer/location.scss";
-@import "page/page-body/page-footer/contacts/contacts.scss";
-@import "page/page-body/page-footer/contacts/copyright/copyright.scss";
-@import "page/page-body/page-footer/contacts/social/social.scss";
+@import 'page/page.scss';
+@import 'page/page-body/page-body.scss';
+@import 'page/page-body/button.scss';
+@import 'page/page-body/page-header/page-header.scss';
+@import 'page/page-body/page-header/main-nav.scss';
+@import 'page/page-body/page-main/page-main.scss';
+@import 'page/page-body/page-main/promo/promo.scss';
+@import 'page/page-body/page-main/program-options.scss';
+@import 'page/page-body/page-main/advantages.scss';
+@import 'page/page-body/page-main/example/example.scss';
+@import 'page/page-body/page-main/example/description/description.scss';
+@import 'page/page-body/page-main/example/description/stats.scss';
+@import 'page/page-body/page-main/example/slider/slider.scss';
+@import 'page/page-body/page-main/example/slider/range.scss';
+@import 'page/page-body/page-footer/page-footer.scss';
+@import 'page/page-body/page-footer/location.scss';
+@import 'page/page-body/page-footer/contacts/contacts.scss';
+@import 'page/page-body/page-footer/contacts/copyright/copyright.scss';
+@import 'page/page-body/page-footer/contacts/social/social.scss';
