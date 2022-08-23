@@ -1,12 +1,16 @@
 .promo {
-  background-image: url('../../../../../img/promo/promo-background-cat.jpg');
+  background-image: url("../../../../../img/promo/promo-background-cat.jpg");
   background-repeat: no-repeat;
   background-size: 320px 302px;
   z-index: -1;
 }
 
+.promo__wrapper {
+  margin-bottom: 22px;
+}
+
 .promo::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 320px;
   height: 302px;
@@ -18,6 +22,8 @@
   font-size: 36px;
   line-height: 36px;
   color: $white;
+
+  position: relative;
 }
 
 .promo__slogan {
@@ -25,10 +31,11 @@
   line-height: 14px;
   color: $white;
   text-transform: uppercase;
+
+  position: relative;
 }
 
 .promo__img {
   position: relative;
-  z-index: 1;
+  z-index: 0;
 }
-
