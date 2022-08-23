@@ -5,3 +5,17 @@
   text-transform: uppercase;
   color: $grey-dark-special-222;
 }
+
+.text-catalog {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: $grey-dark-special-444;
+}
+
+.item__button--all-product {
+  color: $grey-dark-special-444;
+  background-color: $grey-F2;
+}
