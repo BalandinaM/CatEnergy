@@ -1,5 +1,19 @@
 .program-options__wrapper {
-  margin: 0 20px;
+}
+
+.program-options__list {
+  display: grid;
+  gap: 20px;
+
+
+  @media (min-width: $tablet-width) {
+    gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
 }
 
 .program-options__item {
