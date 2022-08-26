@@ -1,5 +1,5 @@
-.range__position {
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
+.example__slider {
+  @media (min-width: $tablet-width) {
+    background-color: $grey-EA;
+  }
 }

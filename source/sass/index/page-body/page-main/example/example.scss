@@ -1,10 +1,24 @@
-.example__wrapper {
-  width: 100%;
-  background-color: $grey-EA;
-  padding: 27px 20px 25px 20px;
+.example {
+  @media (max-width: $mobile-max-width) {
+    background-color: $grey-EA;
+  }
 }
 
 .example__title {
   font-size: 36px;
   line-height: 40px;
+
+  @media (min-width: $tablet-width), (min-width: $desktop-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.example__wrapper {
+  display: grid;
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr;
+    background-color: $grey-EA;
+  }
 }
