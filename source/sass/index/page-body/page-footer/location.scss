@@ -1,6 +1,13 @@
 .page-footer__location {
   background-color: $white;
   padding: 28px 20px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @media (min-width: $desktop-width) {
+    gap: 80px;
+  }
 }
 
 .location__title {
@@ -8,9 +15,23 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $grey-dark-special-111;
+
+  @media (min-width: $tablet-width), (min-width:$desktop-width) {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 21px;
+  }
 }
 
 .location__address {
   font-size: 14px;
   line-height: 20px;
+
+  @media (min-width: $tablet-width), (min-width:$desktop-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
