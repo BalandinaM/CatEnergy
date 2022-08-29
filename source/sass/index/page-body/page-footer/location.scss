@@ -5,6 +5,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 
+  @media (min-width: $tablet-width) {
+    gap: 60px;
+  }
+
   @media (min-width: $desktop-width) {
     gap: 80px;
   }

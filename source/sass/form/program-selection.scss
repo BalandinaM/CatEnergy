@@ -1,6 +1,11 @@
 .program-selection__title {
   font-size: 36px;
   line-height: 36px;
+
+  @media (min-width: $tablet-width), (min-width:$desktop-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .program-selection__subtitle {
@@ -8,6 +13,11 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $black;
+
+  @media (min-width: $tablet-width), (min-width:$desktop-width) {
+    font-size: 20px;
+    line-height: 3h0px;
+  }
 }
 
 .program-selection__form {
