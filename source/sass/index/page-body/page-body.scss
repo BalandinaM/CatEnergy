@@ -1,5 +1,7 @@
 .page__body {
   min-width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
   min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;

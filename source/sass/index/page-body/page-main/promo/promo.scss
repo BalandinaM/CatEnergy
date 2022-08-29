@@ -15,7 +15,10 @@
 }
 
 .promo__wrapper {
+  max-width: $mobile-max-width;
   margin-bottom: 22px;
+  margin-left: auto;
+  margin-right: auto;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;

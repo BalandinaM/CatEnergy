@@ -1,4 +1,14 @@
+.main-nav {
+  position: relative;
+}
+
 .main-nav__toggle {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  right: 0;
+  top: -57px;
+
   @media (min-width: $desktop-width), (min-width: $tablet-width) {
     display: none;
   }
@@ -8,6 +18,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -25,6 +36,9 @@
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid #E6E6E6;
 
   @media (min-width: $tablet-width) {
     font-weight: 400;
@@ -39,6 +53,17 @@
     background-color: $black;
   }
 }
+
+//.main-nav__item::before {
+//  @media (max-width: $mobile-max-width) {
+//    content: "";
+//    position: absolute;
+//    width: 100%;
+//    height: 1px;
+//    background-color: $grey-E6;
+//    bottom: 0;
+//  }
+//}
 
 .main-nav__link {
   @media (min-width: $desktop-width) {
