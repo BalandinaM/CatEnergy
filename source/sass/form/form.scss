@@ -24,6 +24,10 @@
 
 .form__button {
   border: none;
+
+  @media (max-width: $mobile-max-width) {
+    grid-column: 1/-1;
+  }
 }
 
 .form__notice {
@@ -32,4 +36,8 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
+
+  @media (max-width: $mobile-max-width) {
+    grid-column: 1/-1;
+  }
 }

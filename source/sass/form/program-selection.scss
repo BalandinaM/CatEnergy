@@ -9,3 +9,16 @@
   text-transform: uppercase;
   color: $black;
 }
+
+.program-selection__form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @media (min-width: $tablet-width) {
+    column-gap: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 80px;
+  }
+}
