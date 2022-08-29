@@ -4,6 +4,11 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $grey-dark-special-222;
+
+  @media (min-width: $tablet-width), (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .text-catalog {
@@ -13,6 +18,11 @@
   font-size: 12px;
   line-height: 16px;
   color: $grey-dark-special-444;
+
+  @media (min-width: $tablet-width), (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 16px;
+  }
 }
 
 .item__button--all-product {
