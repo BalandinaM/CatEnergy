@@ -2,7 +2,7 @@
   font-size: 36px;
   line-height: 36px;
 
-  @media (min-width: $tablet-width), (min-width:$desktop-width) {
+  @media (min-width: $tablet-width), (min-width: $desktop-width) {
     font-size: 60px;
     line-height: 60px;
   }
@@ -14,9 +14,9 @@
   text-transform: uppercase;
   color: $black;
 
-  @media (min-width: $tablet-width), (min-width:$desktop-width) {
+  @media (min-width: $tablet-width), (min-width: $desktop-width) {
     font-size: 20px;
-    line-height: 3h0px;
+    line-height: 30px;
   }
 }
 
