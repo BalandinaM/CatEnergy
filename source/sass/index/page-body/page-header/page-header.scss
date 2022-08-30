@@ -5,8 +5,6 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
-    height: 100px;
-
     flex-direction: row;
     justify-content: space-between;
   }
@@ -33,6 +31,10 @@
     padding-right: 20px;
     align-items: center;
     justify-items: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
   }
 }
 

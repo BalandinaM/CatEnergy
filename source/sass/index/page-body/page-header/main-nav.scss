@@ -1,5 +1,9 @@
 .main-nav {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 73%;
+  }
 }
 
 .main-nav__toggle {
@@ -75,8 +79,7 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    justify-content: flex-end;
-    width: 520px;
+    flex-wrap: wrap;
   }
 
   @media (min-width: $desktop-width) {
@@ -95,12 +98,16 @@
   justify-content: center;
   align-items: center;
 
-  border-bottom: 1px solid #E6E6E6;
+  @media (max-width: $mobile-max-width) {
+    border-bottom: 1px solid $grey-E6;
+  }
 
   @media (min-width: $tablet-width) {
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
+
+    margin-left: auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -111,8 +118,14 @@
   }
 }
 
+.main-nav__item--current .main-nav__link {
+  @media (min-width: $tablet-width), (min-width: $desktop-width) {
+    border-bottom: 2px solid $green-basic;
+  }
+}
+
 .main-nav__link {
-  padding: 22px 50px;
+  padding: 22px 10%;
 
   &:hover,
   &:focus {
@@ -121,6 +134,13 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 42px;
+    padding-bottom: 10px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   @media (min-width: $desktop-width) {
