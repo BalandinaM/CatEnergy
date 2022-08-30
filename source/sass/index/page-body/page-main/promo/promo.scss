@@ -1,8 +1,12 @@
 .promo {
+  position: relative;
+  top: -30px;
+
   @media (max-width: $mobile-max-width) {
     background-image: url("../../../../../img/promo/promo-background-cat.jpg");
     background-repeat: no-repeat;
     background-size: 320px 302px;
+    background-position: center top;
     z-index: -1;
   }
 
@@ -33,7 +37,7 @@
   @media (max-width: $mobile-max-width) {
     content: "";
     position: absolute;
-    width: 320px;
+    width: 100%;
     height: 302px;
     background-color: rgba($green-basic, 0.85);
     z-index: 0;
@@ -53,8 +57,10 @@
   font-size: 36px;
   line-height: 36px;
   color: $white;
+  text-align: center;
 
   position: relative;
+  top: 30px;
 
   @media (min-width: $tablet-width), (min-width: $desktop-width) {
     font-size: 60px;
@@ -68,8 +74,10 @@
   line-height: 14px;
   color: $white;
   text-transform: uppercase;
+  text-align: center;
 
   position: relative;
+  top: 25px;
 
   @media (min-width: $tablet-width), (min-width: $desktop-width) {
     font-size: 20px;
@@ -79,8 +87,11 @@
 }
 
 .promo__img {
+  display: block;
+  margin: auto;
   position: relative;
   z-index: 0;
+  top: 29px;
 }
 
 .promo__button {
