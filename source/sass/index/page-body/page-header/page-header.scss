@@ -1,7 +1,6 @@
 .page-header {
   display: flex;
   flex-direction: column;
-  height: 264px;
 }
 
 @media (min-width: $tablet-width) {
@@ -53,4 +52,5 @@
     justify-self: start;
   }
 }
+
 
