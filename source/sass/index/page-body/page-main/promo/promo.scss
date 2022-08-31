@@ -9,6 +9,10 @@
     z-index: -1;
   }
 
+  @media (min-width: $tablet-width) {
+    height: 878px;
+  }
+
   @media (min-width: $desktop-width) {
     background-image: url("../../../../../img/promo/promo-background-cat.jpg");
     background-repeat: no-repeat;
@@ -24,7 +28,10 @@
   margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 63px;
+    padding-left: 87px;
     margin-bottom: 0;
+
   }
 
   @media (min-width: $desktop-width) {
@@ -63,10 +70,13 @@
   margin-top: 0;
   margin-bottom: 25px;
 
-  @media (min-width: $tablet-width), (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
     color: $black;
+    text-align: left;
+
+    margin-bottom: 41px;
   }
 }
 
@@ -82,10 +92,11 @@
   margin-bottom: 29px;
 
 
-  @media (min-width: $tablet-width), (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
     color: $black;
+    text-align: left;
   }
 }
 
@@ -101,14 +112,17 @@
   line-height: 18px;
   text-align: center;
 
-  display: block;
   box-sizing: border-box;
   width: 280px;
   padding: 7px 44px;
   margin: 0 auto;
 
-  @media (min-width: $tablet-width), (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
+
+    position: absolute;
+    left: 87px;
+    top: 296px;
   }
 }
