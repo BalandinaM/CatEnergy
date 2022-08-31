@@ -5,6 +5,16 @@
   text-transform: uppercase;
   color: $white;
   background-color: $green-basic;
+  cursor: pointer;
 
   display: block;
+}
+
+.button:hover,
+.button:focus {
+  background-color: $green-special;
+}
+
+.button:active {
+  color: rgba($white, 0.5);
 }
