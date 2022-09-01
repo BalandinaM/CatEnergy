@@ -2,8 +2,16 @@
   font-size: 14px;
   line-height: 18px;
 
+  margin-bottom: 25px;
+
   @media (min-width: $tablet-width), (min-width: $desktop-width) {
     font-size: 16px;
     line-height: 24px;
   }
+}
+
+.description__stats {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  column-gap: 31px;
 }

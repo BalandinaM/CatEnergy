@@ -18,6 +18,10 @@
   }
 }
 
+.stat__item--price {
+  grid-column: span 2;
+}
+
 .stats__description--price {
   font-size: 14px;
   line-height: 20px;
