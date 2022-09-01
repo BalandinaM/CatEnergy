@@ -8,6 +8,11 @@
     padding-bottom: 47px;
     border-bottom: 1px solid $grey-E6;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+    border: none;
+  }
 }
 
 .advantages__list {
@@ -35,12 +40,16 @@
   margin-top: 27px;
   margin-bottom: 38px;
 
-  @media (min-width: $tablet-width), (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
 
     margin-top: 45px;
     margin-bottom: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 71px;
   }
 }
 
