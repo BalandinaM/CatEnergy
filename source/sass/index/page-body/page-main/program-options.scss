@@ -1,5 +1,9 @@
 .program-options__wrapper {
   padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
 }
 
 .program-options__list {
@@ -21,6 +25,11 @@
 
   padding: 20px;
   padding-top: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding: 53px;
+    padding-right: 262px;
+  }
 }
 
 .program-options__title {
@@ -33,9 +42,13 @@
   margin-bottom: 29px;
   padding-left: 91px;
 
-  @media (min-width: $tablet-width), (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
+
+    margin-top: 24px;
+    margin-bottom: 24px;
+    padding-left: 0;
   }
 }
 
@@ -51,25 +64,16 @@
   border-bottom: 1px solid $grey-E6;
   margin-bottom: 15px;
 
-  position: relative;
-
-  @media (min-width: $tablet-width), (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
     color: $black;
+
+    padding: 0;
+    border: none;
+    margin-bottom: 48px;
   }
 }
-
-//.program-options__description::before {
-//  @media (max-width: $mobile-max-width) {
-//    content: "";
-//    width: 100%;
-//    height: 1px;
-//    background-color: $grey-D9;
-//    position: absolute;
-//    top: 93px;
-//  }
-//}
 
 .program-options__link {
   font-size: 16px;
