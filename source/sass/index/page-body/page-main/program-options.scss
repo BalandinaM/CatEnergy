@@ -30,6 +30,13 @@
     padding: 53px;
     padding-right: 262px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 41px;
+    padding-bottom: 55px;
+    padding-left: 52px;
+    padding-right: 51px;
+  }
 }
 
 .program-options__title {
@@ -49,6 +56,12 @@
     margin-top: 24px;
     margin-bottom: 24px;
     padding-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 36px;
+    margin-bottom: 73px;
+    padding-left: 162px;
   }
 }
 
@@ -72,6 +85,10 @@
     padding: 0;
     border: none;
     margin-bottom: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 23px;
   }
 }
 
