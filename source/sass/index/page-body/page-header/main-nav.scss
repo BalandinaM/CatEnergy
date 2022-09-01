@@ -85,10 +85,6 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
-
-  @media (min-width: $desktop-width) {
-
-  }
 }
 
 .main-nav__item {
@@ -132,7 +128,7 @@
     border-bottom: 2px solid $green-basic;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     border-bottom: 2px solid $white;
   }
 }
