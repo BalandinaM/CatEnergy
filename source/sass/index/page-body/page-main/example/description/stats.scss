@@ -1,6 +1,19 @@
 .stats__number {
   font-size: 24px;
   line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+
+  box-sizing: border-box;
+  width: 124px;
+  height: 55px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  margin-top: 0;
+  border: 1px solid $grey-CD;
+  border-radius: 3px;
+
+  position: relative;
 
   @media (min-width: $tablet-width), (min-width: $desktop-width) {
     font-size: 30px;
@@ -11,6 +24,20 @@
 .stats__description {
   font-size: 12px;
   line-height: 12px;
+  text-transform: none;
+
+  box-sizing: border-box;
+  width:87px;
+  height: 30px;
+  padding: 4px 14px 10px 14px;
+  background-color: $grey-EA;
+
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: -60px;
+  right: 0;
 
   @media (min-width: $tablet-width), (min-width: $desktop-width) {
     font-size: 14px;
@@ -18,14 +45,11 @@
   }
 }
 
-.stat__item--price {
-  grid-column: span 2;
-}
-
-.stats__description--price {
+.description__price {
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
+  text-align: center;
 
   @media (min-width: $tablet-width), (min-width: $desktop-width) {
     font-size: 20px;
