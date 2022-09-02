@@ -1,5 +1,9 @@
 .example {
     background-color: $grey-EA;
+
+    @media (min-width: $tablet-width) {
+      background-color: $white;
+    }
 }
 
 .example__wrapper {
@@ -7,6 +11,13 @@
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 43px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 33px;
+  }
 }
 
 
@@ -17,9 +28,11 @@
   margin-top: 0;
   margin-bottom: 33px;
 
-  @media (min-width: $tablet-width), (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+
+    margin-bottom: 63px;
   }
 }
 

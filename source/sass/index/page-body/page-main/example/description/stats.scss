@@ -15,9 +15,14 @@
 
   position: relative;
 
-  @media (min-width: $tablet-width), (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
+
+    width: 162px;
+    height: 72px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 }
 
@@ -39,9 +44,22 @@
   bottom: -60px;
   right: 0;
 
-  @media (min-width: $tablet-width), (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 14px;
+    white-space: nowrap;
+
+    width: 114px;
+    height: 40px;
+    padding: 14px 7px 20px 7px;
+    background-color: $white;
+
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: -60px;
+    right: 0;
   }
 }
 
