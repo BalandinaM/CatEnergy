@@ -6,7 +6,9 @@
   grid-template-columns: 1fr 1fr;
 
   @media (min-width: $tablet-width) {
-    gap: 60px;
+    padding: 66px 30px 58px 30px;
+
+    gap: 300px;
   }
 
   @media (min-width: $desktop-width) {
@@ -23,6 +25,8 @@
   @media (min-width: $tablet-width), (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 22px;
+
+    padding-left: 41px;
   }
 
   @media (min-width: $desktop-width) {
@@ -37,5 +41,18 @@
   @media (min-width: $tablet-width), (min-width: $desktop-width) {
     font-size: 16px;
     line-height: 20px;
+    text-align: right;
+
+    padding-right: 41px;
+
+    position: relative;
+  }
+}
+
+.address__city {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: 0;
+    right: 41px;
   }
 }
