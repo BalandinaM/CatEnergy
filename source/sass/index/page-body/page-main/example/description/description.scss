@@ -18,3 +18,27 @@
   column-gap: 31px;
   justify-items: center;
 }
+
+@media (min-width: $tablet-width) {
+  .description__wrapper {
+    display: flex;
+  }
+
+  .description__price {
+    margin-left: auto;
+
+    position: relative;
+  }
+
+  .description__price span {
+    position: absolute;
+    right: 0;
+    top: 50px;
+  }
+
+  .description__stats {
+    column-gap: 42px;
+  }
+}
+
+

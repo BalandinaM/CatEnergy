@@ -43,23 +43,27 @@
   left: 0;
   bottom: -60px;
   right: 0;
+}
 
-  @media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
+  .stats__description {
     font-size: 14px;
     line-height: 14px;
     white-space: nowrap;
 
-    width: 114px;
-    height: 40px;
-    padding: 14px 7px 20px 7px;
+    height: 27px;
+    padding: 7px;
     background-color: $white;
 
-    position: absolute;
-    margin: auto;
-    top: 0;
-    left: 0;
-    bottom: -60px;
-    right: 0;
+    top: 5px
+  }
+
+  .stats__description--weight {
+    width: 114px;
+  }
+
+  .stats__description--time {
+    width: 142px;
   }
 }
 
