@@ -1,8 +1,8 @@
 .example {
-    background-color: $grey-EA;
+  background-color: $grey-EA;
 
-    @media (min-width: $tablet-width) {
-      background-color: $white;
+  @media (min-width: $tablet-width) {
+    background-color: $white;
     }
 }
 
@@ -14,8 +14,8 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 43px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 0px;
+    padding-right: 0px;
     padding-bottom: 33px;
   }
 }
@@ -33,10 +33,16 @@
     line-height: 60px;
 
     margin-bottom: 63px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
 .example__description {
-  margin-bottom: 44px;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 44px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 

@@ -1,6 +1,14 @@
 .example__slider {
   @media (min-width: $tablet-width) {
     background-color: $grey-EA;
+
+    height: 462px;
+    margin-top: 191px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    position: relative;
+
   }
 }
 
@@ -8,6 +16,15 @@
   width: 311px;
   margin: 0 auto;
   margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 700px;
+  }
 }
 
 .slider__image--hidden {

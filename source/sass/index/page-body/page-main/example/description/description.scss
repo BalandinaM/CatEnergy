@@ -19,24 +19,29 @@
   justify-items: center;
 }
 
-@media (min-width: $tablet-width) {
-  .description__wrapper {
+.description__wrapper {
+  @media (min-width: $tablet-width) {
     display: flex;
   }
+}
 
-  .description__price {
+.description__price {
+  @media (min-width: $tablet-width) {
     margin-left: auto;
-
     position: relative;
   }
+}
 
-  .description__price span {
+.description__price span {
+  @media (min-width: $tablet-width) {
     position: absolute;
     right: 0;
     top: 50px;
   }
+}
 
-  .description__stats {
+.description__stats {
+  @media (min-width: $tablet-width) {
     column-gap: 42px;
   }
 }
