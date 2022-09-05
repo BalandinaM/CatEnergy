@@ -21,9 +21,13 @@
 
 .description__stats {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   column-gap: 31px;
   justify-items: center;
+
+  @media (min-width: $tablet-width) {
+    column-gap: 42px;
+  }
 }
 
 .description__wrapper {
@@ -64,11 +68,3 @@
     top: 50px;
   }
 }
-
-.description__stats {
-  @media (min-width: $tablet-width) {
-    column-gap: 42px;
-  }
-}
-
-
