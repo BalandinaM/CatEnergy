@@ -1,3 +1,43 @@
 .page-footer {
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
+}
+
+.page-footer__wrapper {
   background-color: $grey-F2;
+}
+
+.page-footer__location {
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    height: 201px;
+    box-sizing: border-box;
+    padding-top: 66px;
+
+    position: absolute;
+  }
+}
+.page-footer__location {
+  background-color: $white;
+  padding: 28px 20px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @media (min-width: $tablet-width) {
+    padding: 50px 71px 42px 71px;
+
+    gap: 300px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    box-sizing: border-box;
+    padding: 50px 89px 42px 76px;
+
+    gap: 80px;
+
+    position: absolute;
+  }
 }
