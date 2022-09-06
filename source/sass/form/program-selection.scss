@@ -1,6 +1,13 @@
+.program-selection__wrapper {
+  padding: 0 30px;
+}
+
 .program-selection__title {
   font-size: 36px;
   line-height: 36px;
+
+  margin-top: 27px;
+  margin-bottom: 37px;
 
   @media (min-width: $tablet-width), (min-width: $desktop-width) {
     font-size: 60px;
@@ -14,6 +21,8 @@
   text-transform: uppercase;
   color: $black;
 
+  margin-bottom: 39px;
+
   @media (min-width: $tablet-width), (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 30px;
@@ -22,9 +31,9 @@
 
 .program-selection__form {
   display: grid;
-  grid-template-columns: 1fr 1fr;
 
   @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
     column-gap: 60px;
   }
 
