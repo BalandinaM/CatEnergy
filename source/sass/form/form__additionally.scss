@@ -1,7 +1,49 @@
 .form__additionally {
-  grid-column: 1/-1;
+  padding-bottom: 18px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.additionally__title {
+  padding-bottom: 28px;
 }
 
 .additionally__label {
   color: $black;
+}
+
+.form__input--radio-or-check + .additionally__label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 46px;
+}
+
+.form__input--radio-or-check + .additionally__label::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: $white;
+  border: 1px solid $grey-CD;
+  top: 0;
+  left: 0;
+}
+
+.form__input--radio-or-check:checked + .additionally__label::after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 14px;
+  background-image: url("../../img/checkbox_on.svg");
+  top: 8px;
+  left: 9px;
 }
