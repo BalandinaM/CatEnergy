@@ -90,17 +90,21 @@
               </label>
             </fieldset>
             <fieldset class="form__contacts contacts">
-              <legend class="title form__subtitle">
+              <legend class="title form__subtitle contacts__title">
                 Контактные данные (владельца кота)
               </legend>
-              <label class="form__text" for="email">
-                E-mail:*
-              </label>
-              <input class="form__text form__input form__input--email" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
-              <label class="form__text" for="phone">
-                Телефон:*
-              </label>
-              <input class="form__text form__input form__input--phone" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
+              <div class="form__input-wrap">
+                <label class="form__text" for="email">
+                  E-mail:*
+                </label>
+                <input class="form__text form__input form__input--email" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
+              </div>
+              <div class="form__input-wrap">
+                <label class="form__text" for="phone">
+                  Телефон:*
+                </label>
+                <input class="form__text form__input form__input--phone" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
+              </div>
             </fieldset>
             <fieldset class="form__comments">
               <legend class="title form__subtitle">
