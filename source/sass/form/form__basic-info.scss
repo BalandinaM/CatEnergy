@@ -1,10 +1,39 @@
 .form__basic-info {
   grid-column: 1/-1;
 
-  display: flex;
-  flex-direction: column;
+  padding-bottom: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-bottom: 1px solid $grey-D9;
 
   @media (min-width: $desktop-width) {
     grid-column: 1/2;
   }
+}
+
+.form__input-wrap {
+  display: flex;
+  align-items: baseline;
+
+  margin-bottom: 14px;
+}
+
+.form__input-wrap .form__input {
+  flex-grow: 1;
+  min-width: 172px;
+}
+
+.form__input-wrap .form__input:last-child {
+  flex-shrink: 1;
+}
+
+.form__input-wrap .form__text {
+  flex-shrink: 0;
+}
+
+.form__input {
+  box-sizing: border-box;
+  padding: 14px;
+  border: 1px solid $grey-E7;
+  margin-left: 14px;
 }

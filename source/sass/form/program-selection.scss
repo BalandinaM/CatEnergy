@@ -1,11 +1,8 @@
-.program-selection__wrapper {
-  padding: 0 30px;
-}
-
 .program-selection__title {
   font-size: 36px;
   line-height: 36px;
 
+  padding: 0 20px;
   margin-top: 27px;
   margin-bottom: 37px;
 
@@ -21,6 +18,7 @@
   text-transform: uppercase;
   color: $black;
 
+  padding: 0 20px;
   margin-bottom: 39px;
 
   @media (min-width: $tablet-width), (min-width: $desktop-width) {
@@ -30,7 +28,6 @@
 }
 
 .program-selection__form {
-  display: grid;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
