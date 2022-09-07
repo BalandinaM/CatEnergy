@@ -6,13 +6,19 @@
   margin-top: 27px;
   margin-bottom: 37px;
 
-  @media (min-width: $tablet-width), (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
 
     padding: 0 70px;
     margin-top: 65px;
     margin-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+    margin-top: 87px;
+    margin-bottom: 56px;
   }
 }
 
@@ -29,14 +35,15 @@
     font-size: 20px;
     line-height: 30px;
 
-    padding-left: 70px;
-    padding-right: 375px;
+    padding: 0 70px;
+    margin-bottom: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
     margin-bottom: 66px;
   }
 }
 
-.program-selection__form {
-  @media (min-width: $desktop-width) {
-    column-gap: 80px;
-  }
-}
+//.program-selection__form {
+//}
