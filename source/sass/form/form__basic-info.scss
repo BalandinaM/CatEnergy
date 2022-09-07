@@ -1,9 +1,16 @@
 .form__basic-info {
 
-  padding-bottom: 24px;
+  padding-bottom: 27px;
   padding-left: 20px;
   padding-right: 20px;
   border-bottom: 1px solid $grey-D9;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 72px;
+    border: none;
+  }
 
   @media (min-width: $desktop-width) {
     grid-column: 1/2;
@@ -22,8 +29,8 @@
   min-width: 172px;
 }
 
-.form__input-wrap .form__input:last-child {
-  flex-shrink: 1;
+.form__input-wrap:last-child {
+  margin-bottom: 0;
 }
 
 .form__input-wrap .form__text {
