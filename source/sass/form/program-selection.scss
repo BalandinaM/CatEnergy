@@ -36,12 +36,6 @@
 }
 
 .program-selection__form {
-
-  @media (min-width: $tablet-width) {
-    grid-template-columns: 1fr 1fr;
-    column-gap: 60px;
-  }
-
   @media (min-width: $desktop-width) {
     column-gap: 80px;
   }
