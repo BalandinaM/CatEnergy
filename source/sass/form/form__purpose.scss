@@ -1,3 +1,12 @@
+.form__wrap-purpose {
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 70px;
+  }
+}
+
 .form__purpose {
   display: flex;
   flex-direction: column;
@@ -7,6 +16,11 @@
   padding-left: 20px;
   padding-right: 20px;
   border-bottom: 1px solid $grey-D9;
+
+  @media (min-width: $tablet-width) {
+    padding: 25px 28px;
+    border: 1px solid $grey-D9;;
+  }
 
   @media (min-width: $desktop-width) {
     grid-column: 2/-1;
@@ -21,6 +35,11 @@
   margin-bottom: 13px;
   padding: 7px;
   padding-left: 46px;
+
+  @media (min-width: $tablet-width) {
+    padding: 5px;
+    padding-left: 60px;
+  }
 }
 
 .form__input--radio-or-check + .purpose__label:last-child {
@@ -38,6 +57,11 @@
   border-radius: 50%;
   left:0;
   bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .form__input--radio-or-check:checked + .purpose__label::after {
@@ -49,6 +73,13 @@
   border-radius: 50%;
   left: 9px;
   bottom: 9px;
+
+  @media (min-width: $tablet-width) {
+    width: 18px;
+    height: 18px;
+    left: 12px;
+    bottom: 12px;
+  }
 }
 
 
