@@ -4,10 +4,20 @@
   padding-bottom: 22px;
 
   display: flex;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 65px;
+  }
 }
 
 .comments__title {
   margin-bottom: 37px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 76px;
+  }
 }
 
 .form__input--textarea {
