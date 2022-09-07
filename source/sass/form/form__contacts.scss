@@ -3,11 +3,22 @@
   padding-bottom: 24px;
   padding-left: 20px;
   padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-bottom: 65px;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
 }
 
 .contacts__title {
   padding-top: 26px;
   padding-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 65px;
+  }
 }
 
 .contacts__input {
