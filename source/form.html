@@ -49,47 +49,49 @@
             Запоните анкету, и мы подберем <br> программу питания для вашего кота
           </p>
           <form class="program-selection__form form" action="https://echo.htmlacademy.ru" method="get">
-            <fieldset class="form__basic-info">
-              <legend class="visually-hidden">
-                Введите информацию о вашем питомце
-              </legend>
-              <div class="form__input-wrap">
-                <label class="form__text" for="name">
-                  Имя:*
-                </label>
-                <input class="form__text form__input" type="text" id="name" name="name" placeholder="Барсик" required>
-              </div>
-              <div class="form__input-wrap">
-                <label class="form__text" for="weight">
-                  Вес (кг):*
-                </label>
-                <input class="form__text form__input" type="text" id="weight" name="weight" placeholder="7" required>
-              </div>
-              <div class="form__input-wrap">
-                <label class="form__text" for="age">
-                  Возраст (лет):
-                </label>
-                <input class="form__text form__input" type="text" id="age" name="age" placeholder="7">
-              </div>
-            </fieldset>
-            <div class="form__wrap-purpose">
-              <fieldset class="form__purpose purpose">
+            <div class="form__wrap-info-and-purpose">
+              <fieldset class="form__basic-info">
                 <legend class="visually-hidden">
-                  Каких результатов хотите добиться?
+                  Введите информацию о вашем питомце
                 </legend>
-                <input class="visually-hidden form__input form__input--radio-or-check" type="radio" id="slim" name="purpose" value="slim" checked>
-                <label class="form__text purpose__label" for="slim">
-                  Похудение
-                </label>
-                <input class="visually-hidden form__input form__input--radio-or-check" type="radio" id="weight-gain" name="purpose" value="weight-gain">
-                <label class="form__text purpose__label" for="weight-gain">
-                  Набор массы
-                </label>
-                <input class="visually-hidden form__input form__input--radio-or-check" type="radio" id="recommendation" name="purpose" value="recommendation">
-                <label class="form__text purpose__label" for="recommendation">
-                  Не знаю (нужен ваш совет)
-                </label>
+                <div class="form__input-wrap">
+                  <label class="form__text" for="name">
+                    Имя:*
+                  </label>
+                  <input class="form__text form__input" type="text" id="name" name="name" placeholder="Барсик" required>
+                </div>
+                <div class="form__input-wrap">
+                  <label class="form__text" for="weight">
+                    Вес (кг):*
+                  </label>
+                  <input class="form__text form__input" type="text" id="weight" name="weight" placeholder="7" required>
+                </div>
+                <div class="form__input-wrap">
+                  <label class="form__text" for="age">
+                    Возраст (лет):
+                  </label>
+                  <input class="form__text form__input" type="text" id="age" name="age" placeholder="7">
+                </div>
               </fieldset>
+              <div class="form__wrap-purpose">
+                <fieldset class="form__purpose purpose">
+                  <legend class="visually-hidden">
+                    Каких результатов хотите добиться?
+                  </legend>
+                  <input class="visually-hidden form__input form__input--radio-or-check" type="radio" id="slim" name="purpose" value="slim" checked>
+                  <label class="form__text purpose__label" for="slim">
+                    Похудение
+                  </label>
+                  <input class="visually-hidden form__input form__input--radio-or-check" type="radio" id="weight-gain" name="purpose" value="weight-gain">
+                  <label class="form__text purpose__label" for="weight-gain">
+                    Набор массы
+                  </label>
+                  <input class="visually-hidden form__input form__input--radio-or-check" type="radio" id="recommendation" name="purpose" value="recommendation">
+                  <label class="form__text purpose__label" for="recommendation">
+                    Не знаю (нужен ваш совет)
+                  </label>
+                </fieldset>
+              </div>
             </div>
             <fieldset class="form__contacts contacts">
               <legend class="title form__subtitle contacts__title">

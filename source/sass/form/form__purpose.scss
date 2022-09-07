@@ -5,6 +5,10 @@
     padding-right: 70px;
     padding-bottom: 70px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .form__purpose {
@@ -23,7 +27,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-column: 2/-1;
+    padding-bottom: 29px;
   }
 }
 

@@ -19,6 +19,18 @@
   }
 }
 
+.form__input {
+  box-sizing: border-box;
+  padding: 14px;
+  border: 1px solid $grey-E7;
+  margin-left: 14px;
+
+  @media (min-width: $desktop-width) {
+    padding: 11px 20px;
+  }
+}
+
+
 .form__text {
   font-size: 16px;
   line-height: 18px;

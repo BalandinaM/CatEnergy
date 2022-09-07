@@ -13,7 +13,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-column: 1/2;
+    padding: 0;
   }
 }
 
@@ -22,6 +22,10 @@
   align-items: baseline;
 
   margin-bottom: 14px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .form__input-wrap .form__input {
@@ -35,11 +39,4 @@
 
 .form__input-wrap .form__text {
   flex-shrink: 0;
-}
-
-.form__input {
-  box-sizing: border-box;
-  padding: 14px;
-  border: 1px solid $grey-E7;
-  margin-left: 14px;
 }
