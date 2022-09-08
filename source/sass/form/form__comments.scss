@@ -10,6 +10,12 @@
     padding-right: 70px;
     padding-bottom: 65px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 110px;
+    padding-right: 110px;
+    padding-bottom: 69px;
+  }
 }
 
 .comments__title {
