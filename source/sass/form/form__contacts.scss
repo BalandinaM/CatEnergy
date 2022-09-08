@@ -1,8 +1,10 @@
 .form__contacts {
   padding-top: 26px;
   padding-bottom: 24px;
-  padding-left: 20px;
+  margin-left: 20px;
   padding-right: 20px;
+
+  border-top: 2px solid $green-basic;
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
@@ -25,6 +27,8 @@
 .contacts__title {
   padding-top: 26px;
   padding-bottom: 15px;
+
+  width: 221px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 65px;
