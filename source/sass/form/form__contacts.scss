@@ -10,6 +10,16 @@
     padding-left: 70px;
     padding-right: 70px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 69px;
+    padding-left: 110px;
+    padding-right: 110px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 80px;
+  }
 }
 
 .contacts__title {
@@ -19,8 +29,17 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 65px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+    padding-bottom: 76px;
+  }
 }
 
 .contacts__input {
   margin-left: 5px;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 20px;
+  }
 }
