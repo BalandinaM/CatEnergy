@@ -1,7 +1,11 @@
 .form__comments {
+  position: relative;
+
   padding-left: 20px;
+  padding-top: 37px;
   padding-right: 20px;
-  padding-bottom: 22px;
+  padding-bottom: 40px;
+  border-top: 2px solid $green-basic;
 
   display: flex;
 
@@ -19,7 +23,17 @@
 }
 
 .comments__title {
-  margin-bottom: 37px;
+  box-sizing: border-box;
+  width: 160px;
+  height: 40px;
+  padding: 7px 20px;
+  background-color: $white;
+
+  position: absolute;
+  left: 0;
+  top: -25px;
+
+
 
   @media (min-width: $tablet-width) {
     margin-bottom: 76px;

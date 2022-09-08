@@ -1,7 +1,11 @@
 .form__additionally {
+  position: relative;
+
+  padding-top: 43px;
   padding-bottom: 28px;
   padding-left: 20px;
   padding-right: 20px;
+  border-top: 2px solid $green-basic;
 
   display: flex;
   flex-direction: column;
@@ -27,7 +31,17 @@
 }
 
 .additionally__title {
-  padding-bottom: 28px;
+  box-sizing: border-box;
+  width: 184px;
+  height: 46px;
+  padding: 10px 20px;
+  background-color: $white;
+
+  position: absolute;
+  left: 0;
+  top: -30px;
+
+  //padding-bottom: 28px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 57px;
