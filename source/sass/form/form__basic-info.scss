@@ -28,15 +28,15 @@
   }
 }
 
+.form__input-wrap .form__text {
+  flex-shrink: 0;
+}
+
 .form__input-wrap .form__input {
-  flex-grow: 1;
+  flex: 1 1 auto;
   min-width: 172px;
 }
 
 .form__input-wrap:last-child {
   margin-bottom: 0;
-}
-
-.form__input-wrap .form__text {
-  flex-shrink: 0;
 }
