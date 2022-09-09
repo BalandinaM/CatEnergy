@@ -7,29 +7,29 @@
     <title>CAT ENERGY</title>
   </head>
   <body class="page__body">
-    <header class="page-header">
+    <header class="page-header page-header-wrap">
       <a class="page-header__logo">
-        <img class="page-header__logo-mobile-pic" src="img/logo-pic.svg" width="33" height="38" alt="Лого Кэт Энерджи">
-        <img class="page-header__logo-mobile-title" src="img/logo-title.svg" width="101" height="18" alt="Кэт Энерджи">
+        <img class="page-header__logo-pic" src="img/logo-pic.svg" width="33" height="38" alt="Лого Кэт Энерджи">
+        <img class="page-header__logo-title" src="img/logo-title.svg" width="101" height="18" alt="Кэт Энерджи">
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Закрыть</span>
         </button>
-        <div class="main-nav__wrapper">
+        <div class="main-nav__wrapper"><!--Эта обёртка точно нужна?-->
           <ul class="list main-nav__list">
-            <li class="main-nav__item">
-              <a href="index.html">
+            <li class="title main-nav__item">
+              <a class="main-nav__link main-nav__link--black" href="index.html">
                 Главная
               </a>
             </li>
-            <li class="main-nav__item main-nav__item--current">
-              <a>
+            <li class="title main-nav__item main-nav__item--current">
+              <a class="main-nav__link main-nav__link--black">
                 Каталог продукции
               </a>
             </li>
-            <li class="main-nav__item">
-              <a href="form.html">
+            <li class="title main-nav__item">
+              <a class="main-nav__link main-nav__link--black" href="form.html">
                 Подбор программы
               </a>
             </li>
@@ -39,7 +39,7 @@
     </header>
     <main class="page-main">
       <section class="catalog">
-        <div class="catalog__wrapper">
+        <div class="catalog__wrapper"><!--Возможно не нужен-->
           <h1 class="title catalog__title">
             Каталог продукции
           </h1>
@@ -373,13 +373,16 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <section class="page-footer__location location">
+        <section class="page-footer__location location page-footer__location--grey">
           <h2 class="title location__title">
             Приглашаем к сотрудничеству дилеров!
           </h2>
-          <p class="text location__address address">ул.Большая Конюшенная, д. 19/8
-          <span class="address__city">Санкт-Петербург</span>
-          </p>
+          <div class="location__wrapper">
+            <p class="text location__address address">
+              ул.Большая Конюшенная, д. 19/8
+            </p>
+            <span class="text address__city">Санкт-Петербург</span>
+          </div>
         </section>
         <img class="page-footer__map" width="320" height="362" src="img/map.png" alt="г.Санкт-Петербург ул.Большая Конюшенная, д. 19/8">
         <div class="page-footer__contacts contacts">
@@ -415,5 +418,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/mobile-menu.js"></script>
   </body>
 </html>
