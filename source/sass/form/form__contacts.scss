@@ -15,7 +15,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 69px;
+    padding-top: 88px;
+    padding-bottom: 93px;
     padding-left: 110px;
     padding-right: 110px;
 
@@ -47,8 +48,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 0;
-    padding-bottom: 76px;
+    left: 70px;
   }
 }
 
@@ -57,5 +57,11 @@
 
   @media (min-width: $desktop-width) {
     margin-left: 20px;
+  }
+}
+
+.form__contacts .form__input-wrap {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }

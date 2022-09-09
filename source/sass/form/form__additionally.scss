@@ -50,6 +50,9 @@
     left: 30px;
     top: -35px;
   }
+  @media (min-width: $desktop-width) {
+    left: 70px;
+  }
 }
 
 .additionally__label {
