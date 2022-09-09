@@ -11,6 +11,7 @@
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
+    padding-top: 69px;
     padding-bottom: 54px;
     padding-left: 70px;
     padding-right: 70px;
@@ -41,10 +42,13 @@
   left: 0;
   top: -30px;
 
-  //padding-bottom: 28px;
-
   @media (min-width: $tablet-width) {
-    padding-bottom: 57px;
+    width: 285px;
+    height: 54px;
+    padding: 10px 40px;
+
+    left: 30px;
+    top: -35px;
   }
 }
 

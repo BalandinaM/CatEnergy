@@ -8,8 +8,8 @@
   border-top: 2px solid $green-basic;
 
   @media (min-width: $tablet-width) {
-    padding-top: 0;
-    padding-bottom: 65px;
+    padding-top: 85px;
+    padding-bottom: 89px;
     padding-left: 70px;
     padding-right: 70px;
   }
@@ -38,7 +38,12 @@
   top: -25px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 65px;
+    width: 593px;
+    height: 58px;
+    padding: 10px 40px;
+
+    left: 30px;
+    top: -35px;
   }
 
   @media (min-width: $desktop-width) {
