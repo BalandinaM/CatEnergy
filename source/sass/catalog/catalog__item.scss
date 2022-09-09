@@ -1,3 +1,23 @@
+.catalog__item {
+  padding: 20px;
+  padding-bottom: 25px;
+
+  border-bottom: 1px solid $grey-EB;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+}
+
+.item__link-img {
+  grid-row: span 2;
+
+  display: inline-flex;
+  justify-self: center;
+  align-self: center;
+
+}
+
 .item__link-title {
   font-weight: 400;
   font-size: 16px;
@@ -23,6 +43,10 @@
     font-size: 16px;
     line-height: 16px;
   }
+}
+
+.item__button {
+  grid-column: span 2;
 }
 
 .item__button--all-product {
