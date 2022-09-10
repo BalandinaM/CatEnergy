@@ -50,6 +50,7 @@
     left: 30px;
     top: -35px;
   }
+
   @media (min-width: $desktop-width) {
     left: 70px;
   }
@@ -106,6 +107,6 @@
 
   @media (min-width: $tablet-width) {
     top: 13px;
-    left: 12px
+    left: 12px;
   }
 }
