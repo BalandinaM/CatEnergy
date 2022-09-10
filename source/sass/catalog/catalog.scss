@@ -10,25 +10,32 @@
 
   border-bottom: 1px solid $grey-EB;
 
-  @media (min-width: $tablet-width), (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+
+    padding-top: 65px;
+    padding-bottom: 83px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    border: none;
   }
 }
 
 .catalog__list {
   display: grid;
-
   margin-bottom: 42px;
 
-
   @media (min-width: $tablet-width) {
-    //display: grid;
-    //grid-template-columns: repeat(2, 1fr);
-    //gap: 60px;
-    flex-direction: row;
-    flex-wrap: wrap;
+    grid-template-columns: repeat(2, 1fr);
     gap: 60px;
+
+    padding: 0 30px;
+    padding-bottom: 91px;
+    //flex-direction: row;
+    //flex-wrap: wrap;
+    //gap: 60px;
   }
 
   @media (min-width: $desktop-width) {
