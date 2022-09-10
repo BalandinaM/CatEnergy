@@ -41,3 +41,28 @@
 
   border-top: 1px solid $grey-CD;
 }
+
+.additional-product__promo {
+  margin-top: 39px;
+  height: 289px;
+
+  background-image: url("../../img/catalog/catalog-promo-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 289px;
+  background-position: center top;
+}
+
+.additional-product__promo-text {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: $white;
+  text-align: center;
+
+  padding: 0 60px;
+  padding-top: 186px;
+  padding-bottom: 43px;
+}
+
