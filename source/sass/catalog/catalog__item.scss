@@ -11,10 +11,12 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 
     margin-top: 81px;
     padding: 40px;
     padding-top: 160px;
+    border: none;
     background-color: $grey-F2;
 
     position: relative;
@@ -24,7 +26,14 @@
 .catalog__item--all-product {
   display: flex;
   flex-direction: column;
+
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+    border: 1px solid $grey-F2;
+    padding-top: 52px;
+  }
 }
 
 .item__link-img {
@@ -56,7 +65,7 @@
     text-align: center;
 
     padding: 0 39px;
-    margin-bottom: 12px;
+    padding-bottom: 12px;
   }
 }
 
@@ -67,6 +76,13 @@
   background-image: url("../../img/catalog/mobile_plus-all-product.svg");
   background-repeat: no-repeat;
   background-position: 50% 0;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 110px;
+    padding-bottom: 23px;
+
+    background-size: 60px 60px;
+  }
 }
 
 
@@ -111,6 +127,13 @@
 
 .catalog__item--all-product .text-catalog {
   margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 90px;
+
+    padding: 0 40px;
+    text-align: center;
+  }
 }
 
 .item__button {
