@@ -9,6 +9,12 @@
   grid-template-rows: auto;
 }
 
+.catalog__item--all-product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .item__link-img {
   grid-row: span 2;
 
@@ -33,6 +39,17 @@
     line-height: 24px;
   }
 }
+
+.catalog__item--all-product .item__link-title {
+  padding-top: 53px;
+  padding-bottom: 8px;
+
+  background-image: url("../../img/catalog/mobile_plus-all-product.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+}
+
+
 
 .item__table {
   display: grid;
@@ -62,6 +79,10 @@
     font-size: 16px;
     line-height: 16px;
   }
+}
+
+.catalog__item--all-product .text-catalog {
+  margin-bottom: 21px;
 }
 
 .item__button {

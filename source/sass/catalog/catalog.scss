@@ -19,8 +19,13 @@
 .catalog__list {
   display: grid;
 
+
   @media (min-width: $tablet-width) {
-    grid-template-columns: repeat(2, 1fr);
+    //display: grid;
+    //grid-template-columns: repeat(2, 1fr);
+    //gap: 60px;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 60px;
   }
 
