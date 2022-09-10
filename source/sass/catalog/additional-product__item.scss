@@ -1,9 +1,18 @@
+.additional-product__item {
+  padding-top: 13px;
+  padding-bottom: 19px;
+  border-bottom: 1px solid $grey-CD;
+}
+
 .additional-product__subtitle {
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
   color: $grey-dark-special-222;
+
+  margin-top: 0;
+  margin-bottom: 13px;
 
   @media (min-width: $tablet-width), (min-width: $desktop-width) {
     font-size: 20px;
@@ -19,8 +28,20 @@
   line-height: 20px;
   color: $grey-dark-special-444;
 
+  display: flex;
+  justify-content: space-between;
+
+
   @media (min-width: $tablet-width), (min-width: $desktop-width) {
     font-size: 16px;
     line-height: 20px;
   }
+}
+
+.additional-product__button {
+  margin-top: 15px;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 40px;
 }

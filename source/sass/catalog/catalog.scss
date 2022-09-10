@@ -19,6 +19,8 @@
 .catalog__list {
   display: grid;
 
+  margin-bottom: 42px;
+
 
   @media (min-width: $tablet-width) {
     //display: grid;
