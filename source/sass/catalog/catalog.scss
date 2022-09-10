@@ -21,6 +21,13 @@
 
     border: none;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 78px;
+    padding-bottom: 84px;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
 }
 
 .catalog__list {
@@ -31,15 +38,16 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 60px;
 
+    margin: 0;
     padding: 0 30px;
     padding-bottom: 91px;
-    //flex-direction: row;
-    //flex-wrap: wrap;
-    //gap: 60px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
     gap: 80px;
+
+    padding: 0 110px;
+    padding-bottom: 100px;
   }
 }

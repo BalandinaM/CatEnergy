@@ -16,6 +16,16 @@
 
     border-top: 2px solid $green-basic;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 86px;
+    padding-left: 110px;
+    padding-right: 110px;
+
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 80px;
+  }
 }
 
 .additional-product__title {
@@ -37,12 +47,16 @@
     font-size: 36px;
     line-height: 36px;
 
-    width: 411px;
+    width: 418px;
     height: 46px;
-    padding: 5px 36px;
+    padding: 5px 40px;
 
     left: 30px;
     top: -60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 70px;
   }
 }
 
@@ -55,21 +69,33 @@
   @media (min-width: $tablet-width) {
     border: 1px solid $grey-CD;
   }
+
+  @media (min-width: $desktop-width) {
+    border: 0;
+    border-top: 1px solid $grey-CD;
+    border-bottom: 1px solid $grey-CD;
+  }
 }
 
 .additional-product__promo {
   margin-top: 39px;
-
-  background-image: url("../../img/catalog/catalog-promo-background.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% 289px;
-  background-position: center top;
 
   @media (min-width: $tablet-width) {
     margin-top: 69px;
 
     background-image: url("../../img/catalog/tablet_catalog-promo-background.jpg");
     background-size: 100% 200px;
+  }
+
+  @media (min-width: $desktop-width), (max-width: $mobile-max-width) {
+    background-image: url("../../img/catalog/catalog-promo-background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 289px;
+    background-position: center top;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
   }
 }
 
@@ -80,11 +106,6 @@
   font-size: 16px;
   line-height: 20px;
   color: $white;
-  text-align: center;
-
-  padding: 0 60px;
-  padding-top: 186px;
-  padding-bottom: 43px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -93,6 +114,18 @@
     padding: 70px 0;
     padding-left: 60%;
     padding-right: 17%;
+  }
+
+  @media (min-width: $desktop-width), (max-width: $mobile-max-width) {
+    padding: 0 60px;
+    padding-top: 186px;
+    padding-bottom: 43px;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 43px;
+    padding-right: 43px;
   }
 }
 

@@ -64,7 +64,7 @@
     line-height: 24px;
     text-align: center;
 
-    padding: 0 39px;
+    padding: 0 30px;
     padding-bottom: 12px;
   }
 }
@@ -83,9 +83,12 @@
 
     background-size: 60px 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
-
-
 
 .item__table {
   display: grid;
@@ -119,7 +122,7 @@
 
   margin: 0;
 
-  @media (min-width: $tablet-width), (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 16px;
   }
@@ -133,6 +136,10 @@
 
     padding: 0 40px;
     text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }
 
