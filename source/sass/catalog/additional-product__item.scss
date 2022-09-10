@@ -2,6 +2,10 @@
   padding-top: 13px;
   padding-bottom: 19px;
   border-bottom: 1px solid $grey-CD;
+
+  @media (min-width: $tablet-width) {
+    padding: 27px 36px;
+  }
 }
 
 .additional-product__subtitle {
