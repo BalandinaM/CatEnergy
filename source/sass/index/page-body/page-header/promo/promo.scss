@@ -7,7 +7,7 @@
     background-size: 100% 302px;
     background-position: center top;
 
-    height: 493px;
+    height: 501px;
   }
 
   @media (min-width: $tablet-width) {
@@ -22,7 +22,7 @@
 .promo__wrapper {
   max-width: $mobile-max-width;
 
-  padding-top: 29px;
+  padding-top: 26px;
   margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
@@ -99,6 +99,7 @@
   display: block;
   position: absolute;
   margin: auto;
+  margin-top: 46px;
   top: 120px;
   left: 0;
   bottom: 0;
@@ -117,7 +118,7 @@
   text-align: center;
 
   width: 280px;
-  padding: 7px 44px;
+  padding: 11px 44px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
