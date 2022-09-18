@@ -8,7 +8,7 @@
     font-size: 16px;
     line-height: 24px;
 
-    margin-bottom: 54px;
+    margin-bottom: 52px;
   }
 
   @media (min-width: $desktop-width) {
@@ -67,6 +67,6 @@
   @media (max-width: $tablet-max-width) and (min-width: $tablet-width) {
     position: absolute;
     right: 0;
-    top: 50px;
+    top: 30px;
   }
 }

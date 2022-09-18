@@ -5,7 +5,7 @@
   @media (min-width: $tablet-width) {
     padding: 0 30px;
     margin-bottom: 0;
-    padding-bottom: 47px;
+    padding-bottom: 42px;
     border-bottom: 1px solid $grey-E6;
   }
 
@@ -24,7 +24,7 @@
     grid-template-rows: auto;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 60px;
-    row-gap: 37px;
+    row-gap: 35px;
   }
 
   @media (min-width: $desktop-width) {
@@ -44,7 +44,7 @@
     font-size: 60px;
     line-height: 60px;
 
-    margin-top: 45px;
+    margin-top: 40px;
     margin-bottom: 32px;
   }
 
@@ -69,7 +69,7 @@
     width: 250px;
 
     padding-left: 0;
-    padding-top: 151px;
+    padding-top: 155px;
     padding-bottom: 57px;
   }
 }
@@ -81,7 +81,7 @@
     background-image: url("../../../../img/icon_useful.svg"),
                       url("../../../../img/bg_advantages_1.svg");
     background-size: 80px 80px, 64px 230px;
-    background-position: 0 40px, 130px 40px;
+    background-position: 0 40px, 140px 40px;
   }
 }
 
@@ -92,7 +92,7 @@
     background-image: url("../../../../img/icon_powder.svg"),
                       url("../../../../img/bg_advantages_2.svg");
     background-size: 80px 80px, 110px 230px;
-    background-position: 0 40px, 130px 40px;
+    background-position: 0 40px, 125px 40px;
   }
 }
 
@@ -103,7 +103,7 @@
     background-image: url("../../../../img/icon_replacement.svg"),
                       url("../../../../img/bg_advantages_3.svg");
     background-size: 80px 80px, 110px 230px;
-    background-position: 0 40px, 130px 40px;
+    background-position: 0 40px, 125px 40px;
   }
 }
 
@@ -114,7 +114,7 @@
     background-image: url("../../../../img/icon_time.svg"),
                       url("../../../../img/bg_advantages_4.svg");
     background-size: 80px 80px, 120px 230px;
-    background-position: 0 40px, 130px 40px;
+    background-position: 0 40px, 125px 40px;
   }
 }
 
