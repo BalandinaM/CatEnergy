@@ -30,6 +30,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 100%;
+    padding-top: 360px;
+
     justify-content: space-between;
   }
 }
