@@ -38,6 +38,16 @@
   }
 }
 
+.logo__link:hover,
+.logo__link:focus {
+  opacity: 0.8;
+}
+
+.logo__link:active {
+  opacity: 0.5;
+}
+
+
 .contacts__social {
   width: 100%;
   align-self: center;

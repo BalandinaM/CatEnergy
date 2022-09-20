@@ -169,3 +169,13 @@
     top: 9px;
   }
 }
+
+.program-options__link:hover::before,
+.program-options__link:focus::before {
+  transform: scaleX(1.3);
+}
+
+.program-options__link:active,
+.program-options__link:active::before {
+  opacity: 0.4;
+}

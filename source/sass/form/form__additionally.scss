@@ -60,7 +60,7 @@
   color: $black;
 }
 
-.form__input--radio-or-check + .additionally__label {
+.form__input--check + .additionally__label {
   position: relative;
   display: block;
   cursor: pointer;
@@ -80,7 +80,7 @@
   }
 }
 
-.form__input--radio-or-check + .additionally__label::before {
+.form__input--check + .additionally__label::before {
   content: "";
   position: absolute;
   width: 30px;
@@ -96,7 +96,7 @@
   }
 }
 
-.form__input--radio-or-check:checked + .additionally__label::after {
+.form__input--check:checked + .additionally__label::after {
   content: "";
   position: absolute;
   width: 18px;
@@ -109,4 +109,15 @@
     top: 13px;
     left: 12px;
   }
+}
+
+.form__input--check:hover + .additionally__label:hover::before,
+.form__input--check:focus + .additionally__label:focus::before {
+  border: 1px solid $grey-BA;
+}
+
+.form__input--check:disabled + .additionally__label,
+.form__input--check:disabled + .additionally__label::after,
+.form__input--check:disabled + .additionally__label::before {
+  opacity: 0.6;
 }

@@ -11,5 +11,14 @@
   margin-right: 0;
 }
 
+.social__link:hover .social__icon,
+.social__link:focus .social__icon {
+  stroke: $green-basic;
+}
+
+.social__link:active .social__icon {
+  opacity: 0.5;
+}
+
 
 

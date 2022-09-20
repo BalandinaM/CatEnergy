@@ -86,6 +86,15 @@
   }
 }
 
+.page-header__logo:hover,
+.page-header__logo:focus {
+  opacity: 0.8;
+}
+
+.page-header__logo:active {
+  opacity: 0.6;
+}
+
 .page-header__logo-pic {
   @media (max-width: $mobile-max-width) {
     justify-self: start;

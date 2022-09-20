@@ -156,3 +156,13 @@
   color: $grey-dark-special-444;
   background-color: $grey-F2;
 }
+
+.item__button--all-product:hover,
+.item__button--all-product:focus {
+  background-color: $grey-EB;
+}
+
+.item__button--all-product:active {
+  color: $grey-dark-special-444-opasyti05;
+  opacity: 0.8;
+}

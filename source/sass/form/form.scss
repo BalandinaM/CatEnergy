@@ -34,6 +34,17 @@
   }
 }
 
+.form__input:hover {
+  border: 1px solid $grey-CD;
+}
+
+.form__input:focus {
+  border: 2px solid $grey-dark-special-444;
+}
+
+.form__input--error {
+  border: 2px solid $red;
+}
 
 .form__text {
   font-size: 16px;
