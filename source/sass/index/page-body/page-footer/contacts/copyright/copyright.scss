@@ -6,8 +6,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+  }
 }
 
 .copyright__link p {
   margin-right: 140px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 22px;
+  }
 }
