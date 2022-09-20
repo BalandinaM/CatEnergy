@@ -55,6 +55,8 @@
 .contacts__input {
   margin-left: 5px;
 
+  position: relative;
+
   @media (min-width: $desktop-width) {
     margin-left: 20px;
   }
@@ -64,4 +66,16 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
   }
+}
+
+.form__input--email {
+  background-image: url("../../img/icon_email.svg");
+  background-repeat: no-repeat;
+  background-position: right 16px top 17px;
+}
+
+.form__input--phone {
+  background-image: url("../../img/icon_phone.svg");
+  background-repeat: no-repeat;
+  background-position: right 13px top 13px;
 }
