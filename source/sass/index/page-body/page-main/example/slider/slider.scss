@@ -13,10 +13,17 @@
 }
 
 .slider__image {
-  min-width: 100%;
+  margin-top: 25px;
+  margin-bottom: 28px;
+
+  min-width: 311px;
   height: auto;
 
   @media (min-width: $tablet-width) {
+    position: absolute;
+    margin: auto;
+    top: -190px;
+
     width: 708px;
     height: auto;
   }
