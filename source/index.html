@@ -144,8 +144,12 @@
             </div>
             <div class="example__slider slider">
               <div class="slider__wrap-images">
-                <img class="slider__image" width="311" height="232" src="img/example-before.png" alt="Толстый кот">
-                <img class="slider__image slider__image--hidden" width="251" height="240" src="img/example-after.png" alt="Худой кот">
+                <picture>
+                  <source media="(min-width: 1400px)" srcset="img/example_desktop.png 1x, img/example@2x_desktop.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/example_tablet.png 1x, img/example@2x_tablet.png 2x">
+                  <img class="slider__image" src="img/example-before.png" srcset="img/example-before@2x_mobile.png 2x" alt="Толстый кот">
+                  <!--<img class="slider__image slider__image--hidden" src="img/example-after.png" srcset="img/example-after@2x_mobile.png 2x" alt="Худой кот">-->
+                </picture>
               </div>
               <div class="slider__wrap-range range">
                 <span class="range__position range__position--before">
