@@ -2,12 +2,15 @@
   position: relative;
 
   @media (max-width: $mobile-max-width) {
-    background-image: url("../../../../../img/promo/promo-background-cat.jpg");
+    background-image: url("../../../../../img/promo-background-cat.jpg");
     background-repeat: no-repeat;
     background-size: 100% 302px;
     background-position: center top;
 
-    height: 501px;
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../../../../img/promo-background-cat@2x.jpg");
+    }
+    //height: 501px;
   }
 }
 
