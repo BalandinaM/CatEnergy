@@ -1,18 +1,6 @@
-.slider__wrap-images {
-  margin-top: 40px;
-  margin-bottom: 30px;
-
-  @media (min-width: $tablet-width) {
-    position: absolute;
-    margin: auto;
-    top: -210px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
-}
-
 .slider__image {
+  display: block;
+  margin: 0 auto;
   margin-top: 25px;
   margin-bottom: 28px;
 
@@ -21,8 +9,11 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    margin: auto;
+    margin: 0 auto;
     top: -190px;
+    left: 0;
+    right: 0;
+    bottom: 0;
 
     width: 708px;
     height: auto;
