@@ -46,7 +46,7 @@
 
 .program-options__item--slim {
   background-image: url("../../../../img/icon_slim.svg"),
-                    url("../../../../img/bg_green_circle.svg");
+    url("../../../../img/bg_green_circle.svg");
   background-size: 36px 50px, 50px 50px;
   background-repeat: no-repeat, no-repeat;
   background-position: 29px 21px, 22px 24px;
@@ -58,13 +58,13 @@
 
   @media (min-width: $desktop-width) {
     background-size: 70px 97px, 100px 100px;
-    background-position:  67px 41px, 52px 47px;
+    background-position: 67px 41px, 52px 47px;
   }
 }
 
 .program-options__item--pro {
   background-image: url("../../../../img/icon_pro.svg"),
-                    url("../../../../img/bg_green_circle.svg");
+    url("../../../../img/bg_green_circle.svg");
   background-size: 67px 28px, 50px 50px;
   background-repeat: no-repeat, no-repeat;
   background-position: 13px 35px, 22px 24px;
@@ -80,7 +80,7 @@
     padding-right: 51px;
 
     background-size: 134px 56px, 100px 100px;
-    background-position:  33px 67px, 52px 47px;
+    background-position: 33px 67px, 52px 47px;
   }
 }
 
