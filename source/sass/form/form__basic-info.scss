@@ -1,6 +1,6 @@
 .form__basic-info {
 
-  padding-bottom: 27px;
+  padding-bottom: 17px;
   padding-left: 20px;
   padding-right: 20px;
   border-bottom: 1px solid $grey-D9;
@@ -8,7 +8,7 @@
   @media (min-width: $tablet-width) {
     padding-left: 70px;
     padding-right: 70px;
-    padding-bottom: 72px;
+    padding-bottom: 69px;
     border: none;
   }
 
@@ -23,8 +23,12 @@
 
   margin-bottom: 14px;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 18px;
   }
 }
 

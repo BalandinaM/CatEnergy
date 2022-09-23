@@ -25,12 +25,14 @@
   border: 1px solid $grey-E7;
   margin-left: 14px;
 
-  @media (min-width: $desktop-width) {
-    padding: 11px 20px;
+  @media (min-width: $tablet-width) {
+    padding: 11px 14px;
+    margin-left: 16px;
   }
 
   @media (min-width: $desktop-width) {
     margin-left: 20px;
+    padding: 11px 20px;
   }
 }
 
