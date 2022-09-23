@@ -1,10 +1,10 @@
 .additional-product__item {
   padding-top: 13px;
-  padding-bottom: 19px;
+  padding-bottom: 20px;
   border-bottom: 1px solid $grey-CD;
 
   @media (min-width: $tablet-width) {
-    padding: 27px 36px;
+    padding: 26px 36px;
 
     display: flex;
     flex-wrap: wrap;
@@ -12,7 +12,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 15px 0;
+    padding: 16px 0;
 
     flex-wrap: nowrap;
     align-items: center;
@@ -32,8 +32,8 @@
   text-transform: uppercase;
   color: $grey-dark-special-222;
 
-  margin-top: 0;
-  margin-bottom: 13px;
+  margin: 0;
+
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -55,6 +55,9 @@
   line-height: 20px;
   color: $grey-dark-special-444;
 
+  margin-top: 9px;
+  margin-bottom: 10px;
+
   display: flex;
   justify-content: space-between;
 
@@ -64,6 +67,7 @@
     line-height: 20px;
 
     margin: 0;
+    margin-top: 6px;
   }
 
   @media (min-width: $desktop-width) {
@@ -76,14 +80,13 @@
 }
 
 .additional-product__button {
-  margin-top: 15px;
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
   height: 40px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 25px;
+    margin-top: 20px;
   }
 
   @media (min-width: $desktop-width) {

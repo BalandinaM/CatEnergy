@@ -1,6 +1,6 @@
 .catalog__item {
   padding: 20px;
-  padding-bottom: 25px;
+  padding-bottom: 24px;
 
   border-bottom: 1px solid $grey-EB;
 
@@ -14,8 +14,7 @@
     justify-content: space-between;
 
     margin-top: 81px;
-    padding: 40px;
-    padding-top: 160px;
+    padding: 160px 36px 40px 36px;
     border: none;
     background-color: $grey-F2;
 
@@ -24,9 +23,10 @@
 }
 
 .catalog__item--all-product {
+  padding-top: 24px;
+
   display: flex;
   flex-direction: column;
-
   align-items: center;
 
   @media (min-width: $tablet-width) {
@@ -47,6 +47,28 @@
     position: absolute;
     bottom: 303px;
   }
+
+  @media (min-width: $desktop-width) {
+    bottom: 310px;
+  }
+}
+
+.link-img__small-img {
+  width: 68px;
+  height: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 161px;
+  }
+}
+
+.link-img__big-img {
+  width: 84px;
+  height: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 168px;
+  }
 }
 
 .item__link-title {
@@ -57,20 +79,25 @@
   color: $grey-dark-special-222;
 
 
-  padding-bottom: 18px;
+  padding-bottom: 14px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 24px;
     text-align: center;
 
-    padding: 0 30px;
-    padding-bottom: 12px;
+    padding: 0 42px;
+    padding-bottom: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 10px;
+    padding-bottom: 14px;
   }
 }
 
 .catalog__item--all-product .item__link-title {
-  padding-top: 53px;
+  padding-top: 55px;
   padding-bottom: 8px;
 
   background-image: url("../../img/catalog/mobile_plus-all-product.svg");
@@ -85,6 +112,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 105px;
     padding-left: 0;
     padding-right: 0;
   }
@@ -98,7 +126,7 @@
   padding-bottom: 22px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 33px;
+    padding-bottom: 35px;
   }
 }
 
@@ -107,7 +135,8 @@
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
-    padding: 9px 0;
+    padding-top: 10px;
+    padding-bottom: 4px;
     border-bottom: 1px solid $grey-CD;
   }
 }
