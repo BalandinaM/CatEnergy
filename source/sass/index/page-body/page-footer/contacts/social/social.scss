@@ -11,11 +11,36 @@
   margin-right: 0;
 }
 
+.social__icon--vk {
+  @media (min-width: $tablet-width) {
+    width: 30px;
+    height: 22px;
+  }
+}
+
+.social__icon--insta {
+  @media (min-width: $tablet-width) {
+    width: 23px;
+    height: 23px;
+  }
+}
+
+.social__icon--fb {
+  stroke: $grey-special-icon;
+  fill: none;
+
+  @media (min-width: $tablet-width) {
+    width: 28px;
+    height: 33px;
+  }
+}
+
 .social__link:hover .social__icon,
 .social__link:focus .social__icon {
   stroke: $green-basic;
 }
 
 .social__link:active .social__icon {
+  stroke: $green-basic;
   opacity: 0.5;
 }
