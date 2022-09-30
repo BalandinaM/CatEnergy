@@ -53,20 +53,28 @@
 }
 
 .form__wrap-input-and-svg {
-  position: relative;
+  display: flex;
+  margin-left: 10px;
+  border: 1px solid $grey-E7;
+
   flex: 1 1 auto;
+
+  &:focus {
+    border: 2px solid $grey-dark-special-444;
+  }
+
+  &--error {
+    border: 2px solid $red;
+  }
 }
 
-.form__icon--email {
-  position: absolute;
-  top: 16px;
-  right: 32px;
-}
+
 
 .contacts__input {
-  margin-left: 10px;
+  border: none;
+  margin: 0;
 
-  //position: relative;
+  flex-grow: 0;
 
   @media (min-width: $desktop-width) {
     margin-left: 20px;
@@ -79,7 +87,22 @@
   }
 }
 
+.form__wrap-input-and-svg:focus .form__icon {
+  fill: none;
+  stroke: $green-basic;
+}
 
+.form__icon {
+  fill: none;
+  stroke: $grey-dark-special-222;
+
+  margin-top: 16px;
+  margin-right: 16px;
+}
+
+.form__input--error + .form__icon {
+  stroke: $red;
+}
 
 //.form__input--email {
 //  background-image: url("../../img/icon_email.svg");
