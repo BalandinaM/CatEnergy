@@ -54,10 +54,12 @@
 
 .form__wrap-input-and-svg {
   display: flex;
-  margin-left: 10px;
+  margin-left: 5px;
   border: 1px solid $grey-E7;
 
   flex: 1 1 auto;
+
+  position: relative;
 
   &:focus {
     border: 2px solid $grey-dark-special-444;
@@ -95,9 +97,11 @@
 .form__icon {
   fill: none;
   stroke: $grey-dark-special-222;
+  stroke-width: 1px;
 
-  margin-top: 16px;
-  margin-right: 16px;
+  position: absolute;
+  top: 14px;
+  right: 14px;
 }
 
 .form__input--error + .form__icon {
