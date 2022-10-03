@@ -11,6 +11,12 @@
       background-image: url("../../../../../img/promo-background-cat@2x.jpg");
     }
   }
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-areas: "title" "slogan" "button" "img";
+    grid-template-rows: auto auto auto 526px;
+  }
 }
 
 .promo__wrapper {
@@ -19,16 +25,13 @@
   margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 39px;
-    padding-left: 87px;
-    margin-bottom: 525px;
+    padding-top: 14px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 58px;
     padding-left: 80px;
-
-    margin-bottom: 0;
   }
 }
 
@@ -52,6 +55,7 @@
   position: relative;
 
   padding-top: 25px;
+  padding-left: 87px;
   margin: 0;
   margin-bottom: 25px;
 
@@ -62,6 +66,8 @@
     text-align: left;
 
     margin-bottom: 40px;
+
+    grid-area: title;
   }
 }
 
@@ -80,7 +86,11 @@
     color: $black;
     text-align: left;
 
+    padding-left: 87px;
+    margin-top: 0;
     margin-bottom: 49px;
+
+    grid-area: slogan;
   }
 
   @media (min-width: $desktop-width) {
@@ -105,9 +115,13 @@
     width: 709px;
     height: 609px;
 
-    margin-top: 120px;
+    position: absolute;
 
+    margin-top: 0;
+    top: -80px;
     z-index: -1;
+
+    grid-area: img;
   }
 
   @media (min-width: $desktop-width) {
@@ -137,5 +151,8 @@
     width: 244px;
     padding: 17px 26px;
     margin: 0;
+    margin-left: 87px;
+
+    grid-area: button;
   }
 }
