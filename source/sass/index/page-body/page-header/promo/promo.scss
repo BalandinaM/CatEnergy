@@ -17,11 +17,15 @@
     grid-template-areas: "title" "slogan" "button" "img";
     grid-template-rows: auto auto auto 526px;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-template-rows: min-content;
+    grid-template-columns: 42.6% 57.4%;
+    grid-template-areas: "title img" "slogan img" "button img";
+  }
 }
 
 .promo__wrapper {
-  max-width: $mobile-max-width;
-
   margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
@@ -55,7 +59,7 @@
   position: relative;
 
   padding-top: 25px;
-  padding-left: 87px;
+
   margin: 0;
   margin-bottom: 25px;
 
@@ -66,8 +70,12 @@
     text-align: left;
 
     margin-bottom: 40px;
-
+    padding-left: 87px;
     grid-area: title;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }
 
@@ -88,13 +96,13 @@
 
     padding-left: 87px;
     margin-top: 0;
-    margin-bottom: 49px;
+    margin-bottom: 50px;
 
     grid-area: slogan;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 50px;
+    padding: 0;
   }
 }
 
@@ -114,10 +122,13 @@
   @media (min-width: $tablet-width) {
     width: 709px;
     height: 609px;
+    align-self: center;
 
     position: absolute;
-
-    margin-top: 0;
+    margin: auto;
+    left: 0;
+    bottom: 0;
+    right: 0;
     top: -80px;
     z-index: -1;
 
@@ -128,10 +139,10 @@
     width: 552px;
     height: 499px;
 
-    position: absolute;
-    top: -145px;
-    left: 225px;
     z-index: 0;
+    position: absolute;
+    top: 50px;
+    left: -52%;
   }
 }
 
@@ -154,5 +165,9 @@
     margin-left: 87px;
 
     grid-area: button;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
   }
 }
