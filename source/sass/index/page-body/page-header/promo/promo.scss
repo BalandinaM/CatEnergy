@@ -92,6 +92,9 @@
 }
 
 .promo__img {
+   width: 280px;
+   height: 270px;
+
   display: block;
   position: absolute;
   margin: auto;
@@ -104,6 +107,7 @@
 
   @media (min-width: $tablet-width) {
     width: 709px;
+    height: 609px;
 
     margin-top: 120px;
 
