@@ -16,7 +16,6 @@
 .promo__wrapper {
   max-width: $mobile-max-width;
 
-  padding-top: 26px;
   margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
@@ -52,7 +51,8 @@
 
   position: relative;
 
-  margin-top: 0;
+  padding-top: 25px;
+  margin: 0;
   margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
@@ -74,9 +74,6 @@
 
   position: relative;
 
-  margin-bottom: 302px;
-
-
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
@@ -92,14 +89,13 @@
 }
 
 .promo__img {
-   width: 280px;
-   height: 270px;
+  width: 280px;
+  height: 270px;
 
   display: block;
-  position: absolute;
+  position: relative;
   margin: auto;
-  margin-top: 46px;
-  top: 120px;
+  margin-top: 28px;
   left: 0;
   bottom: 0;
   right: 0;
