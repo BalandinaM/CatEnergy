@@ -2,10 +2,11 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 35px;
 }
 
 .social__item {
-  margin-right: 35px;
+  //margin-right: 35px;
 }
 
 .social__item:last-child {
