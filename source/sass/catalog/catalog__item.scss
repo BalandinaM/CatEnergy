@@ -14,7 +14,7 @@
     justify-content: space-between;
 
     margin-top: 81px;
-    padding: 0px 36px 40px 36px;
+    padding: 0 36px 40px 36px;
     border: none;
     background-color: $grey-F2;
   }
@@ -40,7 +40,7 @@
   justify-self: center;
   align-self: center;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     position: relative;
     min-height: 160px;
     min-width: 168px;
