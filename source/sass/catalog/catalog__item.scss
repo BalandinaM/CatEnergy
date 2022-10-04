@@ -62,6 +62,10 @@
     position: absolute;
     bottom: 25px;
   }
+
+  @media (min-width: $desktop-width) {
+    bottom: 35px;
+  }
 }
 
 .link-img__small-img {
