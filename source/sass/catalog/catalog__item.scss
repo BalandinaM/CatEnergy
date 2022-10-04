@@ -41,7 +41,9 @@
   align-self: center;
 
   @media (min-width:$tablet-width) {
+    position: relative;
     min-height: 160px;
+    min-width: 168px;
 
     display: inline-flex;
     justify-self: center;
@@ -57,8 +59,8 @@
 
 
   @media (min-width: $tablet-width) {
-    position: relative;
-    bottom: 45px;
+    position: absolute;
+    bottom: 25px;
   }
 }
 
