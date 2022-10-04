@@ -81,11 +81,13 @@
 .additional-product__promo {
   margin-top: 39px;
 
+
   @media (min-width: $tablet-width) {
-    margin-top: 68px;
+    margin-top: 75px;
+    min-height: 200px;
 
     background-image: url("../../img/catalog/tablet_catalog-promo-background.jpg");
-    background-size: 100% 200px;
+    background-size: 100% 100%;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/catalog/tablet_catalog-promo-background@2x.jpg");
@@ -93,9 +95,11 @@
   }
 
   @media (min-width: $desktop-width), (max-width: $mobile-max-width) {
+    min-height: 289px;
+
     background-image: url("../../img/catalog/catalog-promo-background.jpg");
     background-repeat: no-repeat;
-    background-size: 100% 289px;
+    background-size: 100% 100%;
     background-position: center top;
 
     @media (min-resolution: 2dppx) {
