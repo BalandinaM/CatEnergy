@@ -52,12 +52,6 @@
 }
 
 .item__link-img {
-  //grid-row: span 2;
-  //display: inline-flex;
-  //justify-self: center;
-  //align-self: center;
-
-
   @media (min-width: $tablet-width) {
     position: absolute;
     bottom: 25px;
@@ -201,7 +195,6 @@
 
   width: 100%;
   padding: 7px;
-  //padding-bottom: 10px;
 }
 
 .item__button--all-product {

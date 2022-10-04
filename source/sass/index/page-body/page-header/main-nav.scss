@@ -28,7 +28,6 @@
   }
 }
 
-
 @media (max-width: $mobile-max-width) {
   .main-nav--open .main-nav__toggle {
     &::before,
@@ -118,8 +117,6 @@
 
 
     display: block;
-    //padding: 0 10px;
-    //margin-left: auto;
     margin-bottom: 8px;
     padding: 0;
     padding-left: 35px;
