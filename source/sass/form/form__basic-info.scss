@@ -20,6 +20,8 @@
 .form__input-wrap {
   display: flex;
   align-items: baseline;
+  flex-basis: auto;
+  flex-shrink: 0;
 
   margin-bottom: 14px;
 
