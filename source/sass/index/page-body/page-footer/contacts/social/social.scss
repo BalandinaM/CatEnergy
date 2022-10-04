@@ -3,6 +3,10 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 33px;
+
+  @media (min-width: $tablet-width) {
+    gap: 28px;
+  }
 }
 
 .social__item {
@@ -41,8 +45,8 @@
   fill: none;
 
   @media (min-width: $tablet-width) {
-    width: 28px;
-    height: 33px;
+    width: 22px;
+    height: 30px;
   }
 }
 
