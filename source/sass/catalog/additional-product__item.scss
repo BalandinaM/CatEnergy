@@ -5,6 +5,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 23px 36px;
+    padding-bottom: 25px;
 
     display: flex;
     flex-wrap: wrap;
@@ -12,7 +13,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 16px 0;
+    padding: 14px 0;
 
     flex-wrap: nowrap;
     align-items: center;
@@ -81,8 +82,7 @@
 
 .additional-product__button {
   width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding:10px;
 
   @media (min-width: $tablet-width) {
     margin-top: 20px;
