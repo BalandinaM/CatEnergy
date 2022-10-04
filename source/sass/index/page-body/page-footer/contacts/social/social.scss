@@ -2,16 +2,25 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 35px;
+  gap: 33px;
 }
 
 .social__item {
   //margin-right: 35px;
 }
 
-.social__item:last-child {
-  margin-right: 0;
+.social__link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 25px;
+  height: 25px;
 }
+
+//.social__item:last-child {
+//  margin-right: 0;
+//}
 
 .social__icon--vk {
   @media (min-width: $tablet-width) {
