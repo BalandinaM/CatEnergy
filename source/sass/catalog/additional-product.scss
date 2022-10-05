@@ -2,7 +2,7 @@
   position: relative;
 
   padding-top: 43px;
-  padding-bottom: 17px;
+  padding-bottom: 35px;
   padding-left: 20px;
   padding-right: 20px;
 
@@ -81,8 +81,13 @@
 .additional-product__promo {
   margin-top: 40px;
 
+  display: flex;
 
   @media (min-width: $tablet-width) {
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+
     margin-top: 68px;
     min-height: 200px;
 
@@ -95,6 +100,10 @@
   }
 
   @media (min-width: $desktop-width), (max-width: $mobile-max-width) {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
     min-height: 289px;
 
     background-image: url("../../img/catalog/catalog-promo-background.jpg");
@@ -112,6 +121,24 @@
   }
 }
 
+.additional-product__promo-svg {
+  fill: $white;
+  display: block;
+
+
+  padding-top: 55px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 58px;
+    padding-left: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 55px;
+    padding-left: 0;
+  }
+}
+
 .additional-product__promo-text {
   font-family: "Arial", sans-serif;
   font-style: normal;
@@ -119,24 +146,26 @@
   font-size: 16px;
   line-height: 20px;
   color: $white;
+  margin: 0;
+  width: 161px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
     text-align: left;
 
     padding: 70px 0;
-    padding-left: 60%;
-    padding-right: 17%;
+    padding-right: 18%;
   }
 
   @media (min-width: $desktop-width), (max-width: $mobile-max-width) {
     padding: 0 60px;
-    padding-top: 186px;
+    padding-top: 50px;
     padding-bottom: 43px;
     text-align: center;
   }
 
   @media (min-width: $desktop-width) {
+    width: 161px;
     padding-left: 43px;
     padding-right: 43px;
   }
