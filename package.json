@@ -1,20 +1,18 @@
 {
-  "name": "{{projectName}}",
+  "name": "CatEnergy",
   "private": true,
   "description": "Личный проект «{{projectTitle}}» от HTML Academy",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
-    "autoprefixer": "10.2.5",
-    "browser-sync": "2.26.14",
-    "gulp": "4.0.2",
+    "autoprefixer": "10.4.12",
     "gulp-plumber": "1.2.1",
-    "gulp-postcss": "9.0.0",
-    "gulp-sass": "4.1.0",
+    "gulp-postcss": "9.0.1",
+    "gulp-sass": "^5.1.0",
     "gulp-sourcemaps": "3.0.0",
     "pixel-glass": "^1.0.13",
-    "postcss": "8.2.8",
+    "sass": "^1.55.0",
     "stylelint": "13.13.1",
-    "stylelint-config-htmlacademy": "0.1.10"
+    "stylelint-config-htmlacademy": "0.1.12"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
@@ -38,5 +36,10 @@
   ],
   "engines": {
     "node": "^12 || ^14"
+  },
+  "dependencies": {
+    "browser-sync": "^2.27.10",
+    "gulp": "^4.0.2",
+    "postcss": "^8.4.17"
   }
 }
