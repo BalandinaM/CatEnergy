@@ -55,13 +55,12 @@
           <picture>
             <source media="(min-width: 1400px)" srcset="img/logo_desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo_tablet.svg">
-            <img class="page-header__logo-pic" src="img/logo_mobile.svg" width="33" height="38" alt="Лого Кэт Энерджи">
+            <img class="page-header__logo-pic" src="img/logo_mobile.svg" width="33" height="38" alt="Кот в костюме супергероя">
           </picture>
-          <img class="page-header__logo-title" src="img/logo-title.svg" width="101" height="18" alt="Кэт Энерджи">
+          <img class="page-header__logo-title" src="img/logo-title.svg" width="101" height="18" alt="Лого Кэт Энерджи">
         </a>
         <nav class="main-nav main-nav--open main-nav--nojs">
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Закрыть</span>
+          <button class="main-nav__toggle" type="button" aria-label="Закрыть меню">
           </button>
           <div class="main-nav__wrapper"><!--Эта обёртка точно нужна?-->
             <ul class="list main-nav__list">
@@ -109,7 +108,7 @@
           </h2>
           <ul class="list program-options__list">
             <li class="program-options__item">
-              <svg class="program-options__img--slim" width="50" height="53">
+              <svg  class="program-options__img--slim" width="50" height="53" aria-hidden="true" focusable="false">
                 <use xlink:href="#icon-slim"></use>
               </svg>
               <h3 class="title program-options__title">
@@ -123,7 +122,7 @@
               </a>
             </li>
             <li class="program-options__item">
-              <svg class="program-options__img--pro" width="67" height="50">
+              <svg class="program-options__img--pro" width="67" height="50" aria-hidden="true" focusable="false">
                 <use xlink:href="#icon-pro"></use>
               </svg>
               <h3 class="title program-options__title">
@@ -191,11 +190,11 @@
             <div class="example__slider slider">
                 <picture>
                   <source media="(min-width: 768px)" srcset="img/example-before_tablet_desktop.png 1x, img/example-before@2x_tablet_desktop.png 2x">
-                  <img class="slider__image--before " src="img/example-before_mobile.png" srcset="img/example-before@2x_mobile.png 2x" width="311" height="232" alt="Толстый кот">
+                  <img class="slider__image--before " src="img/example-before_mobile.png" srcset="img/example-before@2x_mobile.png 2x" width="311" height="232" alt="Толстый кот Борис до того как заменил свой обычный корм на Cat Energy Slim">
                 </picture>
                 <picture>
                   <source media="(min-width: 768px)" srcset="img/example-after_tablet_desktop.png 1x, img/example-after@2x_tablet_desktop.png 2x">
-                  <img class="slider__image--after slider__image--hidden" src="img/example-after_mobile.png" srcset="img/example-after@2x_mobile.png 2x" width="251" height="240"  alt="Худой кот">
+                  <img class="slider__image--after slider__image--hidden" src="img/example-after_mobile.png" srcset="img/example-after@2x_mobile.png 2x" width="251" height="240"  alt="Худой кот Борис через 2 месяца после того как заменил свой обычный корм на Cat Energy Slim">
                 </picture>
               <div class="slider__wrap-range range">
                 <span class="range__position range__position--before">
@@ -229,33 +228,31 @@
         <iframe class="page-footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037907470375!2d30.318562737554867!3d59.93871642390735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1663844631789!5m2!1sru!2sru" width="320" height="362" style="border:0;" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
         </iframe>
         <div class="page-footer__contacts contacts contacts-wrap">
-          <div class="contacts__logo logo">
-            <a class="logo__link" href="#">
-              <img src="img/logo-title.svg" width="128" height="24" alt="">
+          <div class="contacts__logo logo" >
+            <a class="logo__link" href="#"  aria-label="На главную страницу">
+              <img src="img/logo-title.svg" width="128" height="24" alt="" aria-hidden="true" focusable="false">
             </a>
           </div>
           <div class="contacts__social social">
             <ul class="list social__list">
               <li class="social__item">
-                <a class="social__link" href="#">
-                  <span class="visually-hidden">В контакте</span>
-                  <svg class="social__icon social__icon--vk" width="23" height="13">
+                <a class="social__link" href="#" aria-label="В контакте">
+                  <svg class="social__icon social__icon--vk" width="23" height="13" aria-hidden="true" focusable="false">
                     <use xlink:href="#icon-vk"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
-                <a class="social__link" href="#">
-                  <span class="visually-hidden">Инстаграмм</span>
-                  <svg class="social__icon social__icon--insta" width="16" height="16">
+                <a class="social__link" href="#" aria-label="Инстаграмм">
+                  <svg class="social__icon social__icon--insta" width="16" height="16" aria-hidden="true" focusable="false">
                     <use xlink:href="#icon-insta"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
-                <a class="social__link" href="#">
+                <a class="social__link" href="#" aria-label="Фейсбук">
                   <span class="visually-hidden">Фейсбук</span>
-                  <svg class="social__icon social__icon--fb" width="13" height="20">
+                  <svg class="social__icon social__icon--fb" width="13" height="20" aria-hidden="true" focusable="false">
                     <use xlink:href="#icon-fb"></use>
                   </svg>
                 </a>
@@ -263,9 +260,9 @@
             </ul>
           </div>
           <div class="contacts__copyright copyright">
-            <a class="text copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-              <p>HTML&nbsp;Academy</p>
-              <svg class="copyright__icon" width="27" height="34">
+            <a class="text copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Copyright HTML Academy">
+              <p aria-hidden="true" focusable="false">HTML&nbsp;Academy</p>
+              <svg class="copyright__icon" width="27" height="34" aria-hidden="true" focusable="false">
                 <use xlink:href="#icon-html"></use>
               </svg>
             </a>
