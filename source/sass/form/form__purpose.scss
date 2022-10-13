@@ -83,8 +83,8 @@
   }
 }
 
-.form__input--radio:hover + .purpose__label:hover::before,
-.form__input--radio:focus + .purpose__label:focus::before {
+.form__input--radio:hover + .purpose__label::before,
+.form__input--radio:focus + .purpose__label::before {
   border: 1px solid $grey-BA;
 }
 

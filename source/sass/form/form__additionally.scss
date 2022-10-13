@@ -111,8 +111,8 @@
   }
 }
 
-.form__input--check:hover + .additionally__label:hover::before,
-.form__input--check:focus + .additionally__label:focus::before {
+.form__input--check:hover + .additionally__label::before,
+.form__input--check:focus + .additionally__label::before {
   border: 1px solid $grey-BA;
 }
 
