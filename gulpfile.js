@@ -12,8 +12,9 @@ const rename  = require("gulp-rename");
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
-const path = require("path");
-const htmlmin2 = require("gulp-html-minifier-terser");
+//const path = require("path");
+//const htmlmin2 = require("gulp-html-minifier-terser");
+const del = require("del");
 
 
 //HTML
@@ -45,7 +46,7 @@ exports.html = html;
 // Scripts Работает
 
 const scripts = () => {
-  return gulp.src("source/js/mobile-menu.js")
+  return gulp.src("source/js/*.js")
     .pipe(terser())
     .pipe(rename("mobile-menu.min.js"))
     .pipe(gulp.dest("build/js"))
@@ -131,12 +132,46 @@ exports.svgsprite = svgsprite;
 //
 //exports.svgsprite = svgsprite;
 
+const copyImages = () => {
+  return gulp.src("source/img/**/*.{png,jpg,svg}")
+    .pipe(gulp.dest("build/img"))
+}
+
+exports.copyImages = copyImages;
+
+// Clean
+
+const clean = () => {
+  return del("build");
+};
+
+exports.clean = clean;
+
+// Copy
+
+const copy = (done) => {
+  gulp.src([
+    "source/fonts/*.{woff2,woff}",
+    "source/*.ico",
+    //"source/img/**/*.svg",  не понимаю зачем их копировать если плагином images прогоняем их через компрессор
+    "!source/img/icons/*.svg",
+  ], {
+    base: "source"
+  })
+    .pipe(gulp.dest("build"))
+  done();
+}
+
+exports.copy = copy;
+
+
+
 // Server
 
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'source'
+      baseDir: 'build'  //было sourse
     },
     cors: true,
     notify: false,
@@ -147,13 +182,59 @@ const server = (done) => {
 
 exports.server = server;
 
+// Reload
+
+const reload = (done) => {
+  sync.reload();
+  done();
+}
+
 // Watcher
 
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
-  gulp.watch("source/*.html").on("change", sync.reload);
+  gulp.watch("source/js/*.js", gulp.series(scripts));
+  gulp.watch("source/*.html", gulp.series(html, reload));
+  //gulp.watch("source/*.html").on("change", sync.reload);  было
 }
 
+// Сборка в продакшн
+
+const build = gulp.series(
+  clean,
+  copy,
+  images,
+  gulp.parallel(
+    styles,
+    html,
+    scripts,
+    svgsprite,
+    imagewebp
+  ),
+);
+
+exports.build = build;
+
+//Было
+//exports.default = gulp.series(
+//  styles, server, watcher
+//);
+
+// Этот скрипт для просмотра на сервере
+
 exports.default = gulp.series(
-  styles, server, watcher
+  clean,
+  copy,
+  copyImages,
+  gulp.parallel(
+    styles,
+    html,
+    scripts,
+    svgsprite,
+    imagewebp
+  ),
+  gulp.series(
+    server,
+    watcher
+  )
 );
