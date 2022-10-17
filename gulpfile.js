@@ -27,21 +27,21 @@ const del = require("del");
 //
 //exports.html = html;
 
-const html = () => {
-  return gulp.src("sourse/*.html")
-    .pipe(htmlmin({ collapseWhitespace: true }))
-    .pipe(gulp.dest("build"));
-}
-
-exports.html = html;
-
-//const html = ('minify', () => {
+//const html = () => {
 //  return gulp.src("sourse/*.html")
 //    .pipe(htmlmin({ collapseWhitespace: true }))
-//    .pipe(gulp.dest('build'));
-//});
+//    .pipe(gulp.dest("build"));
+//}
 
 
+
+const html = ('minify', () => {
+  return gulp.src("sourse/*.html")
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest('build'));
+});
+
+exports.html = html;
 
 // Scripts Работает
 
@@ -112,25 +112,7 @@ const svgsprite = () => {
 
 exports.svgsprite = svgsprite;
 
-//const svgsprite = () => {
-//  return gulp.src("sourse/img/icons/*.svg")
-//    .pipe(svgmin((file) => {
-//      const prefix = path.basename(file.relative, path.extname(file.relative));
-//        return {
-//            plugins: [{
-//                cleanupIDs: {
-//                    prefix: prefix + '-',
-//                    minify: true
-//                }
-//            }]
-//        }
-//    }))
-//    .pipe(svgstore({inlineSvg: true}))
-//    .pipe(rename("sprite.svg"))
-//    .pipe(gulp.dest("build/img"));
-//}
-//
-//exports.svgsprite = svgsprite;
+//Копирование изображений для просмотра в браузере
 
 const copyImages = () => {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
@@ -153,7 +135,8 @@ const copy = (done) => {
   gulp.src([
     "source/fonts/*.{woff2,woff}",
     "source/*.ico",
-    //"source/img/**/*.svg",  не понимаю зачем их копировать если плагином images прогоняем их через компрессор
+    //"sourse/*.html",  проверить подгрузится ли так сервер через сборку
+  //"source/img/**/*.svg",  не понимаю зачем их копировать если плагином images прогоняем их через компрессор
     "!source/img/icons/*.svg",
   ], {
     base: "source"
@@ -238,3 +221,5 @@ exports.default = gulp.series(
     watcher
   )
 );
+
+//webmanifest не нужно копировать в папку сборки?!
