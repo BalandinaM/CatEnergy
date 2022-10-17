@@ -6,6 +6,7 @@
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "10.4.12",
     "del": "^6.0.0",
+    "gulp": "^4.0.2",
     "gulp-html-minifier-terser": "^7.0.0-beta.0",
     "gulp-htmlmin": "^5.0.1",
     "gulp-imagemin": "^7.1.0",
@@ -49,7 +50,6 @@
   },
   "dependencies": {
     "browser-sync": "^2.27.10",
-    "gulp": "^4.0.2",
     "postcss": "^8.4.17"
   }
 }
