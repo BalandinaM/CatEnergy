@@ -92,10 +92,14 @@
     min-height: 200px;
 
     background-image: url("../../img/catalog/tablet_catalog-promo-background.jpg");
+    background-image: image-set(url("../../img/catalog/tablet_catalog-promo-background.webp") type("image/webp"),
+                                url("../../img/catalog/tablet_catalog-promo-background.jpg") type("image/jpeg"));
     background-size: 100% 100%;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/catalog/tablet_catalog-promo-background@2x.jpg");
+      background-image: image-set(url("../../img/catalog/tablet_catalog-promo-background@2x.webp") type("image/webp"),
+                                  url("../../img/catalog/tablet_catalog-promo-background@2x.jpg") type("image/jpeg"));
     }
   }
 
@@ -107,12 +111,16 @@
     min-height: 289px;
 
     background-image: url("../../img/catalog/catalog-promo-background.jpg");
+    background-image: image-set(url("../../img/catalog/catalog-promo-background.webp") type("image/webp"),
+                                url("../../img/catalog/catalog-promo-background.jpg") type("image/jpeg"));
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center top;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/catalog/catalog-promo-background@2x.jpg");
+      background-image: image-set(url("../../img/catalog/catalog-promo-background@2x.webp") type("image/webp"),
+                                  url("../../img/catalog/catalog-promo-background@2x.jpg") type("image/jpeg"));
     }
   }
 
