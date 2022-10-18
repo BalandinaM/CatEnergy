@@ -15,10 +15,15 @@
   align-items: center;
 
   width: 25px;
-  height: 25px;
+  height: 27px;
 }
 
 .social__icon--vk {
+  fill: $grey-special-icon;
+
+  width: 25px;
+  height: 17px;
+
   @media (min-width: $tablet-width) {
     width: 30px;
     height: 22px;
@@ -26,6 +31,8 @@
 }
 
 .social__icon--insta {
+  fill: $grey-special-icon;
+
   @media (min-width: $tablet-width) {
     width: 23px;
     height: 23px;
@@ -33,8 +40,8 @@
 }
 
 .social__icon--fb {
-  stroke: $grey-special-icon;
   fill: none;
+  stroke: $grey-special-icon;
 
   @media (min-width: $tablet-width) {
     width: 22px;
@@ -44,10 +51,21 @@
 
 .social__link:hover .social__icon,
 .social__link:focus .social__icon {
+  fill: $green-basic;
+}
+
+.social__link:hover .social__icon--fb,
+.social__link:focus .social__icon--fb {
   stroke: $green-basic;
 }
 
 .social__link:active .social__icon {
+  fill: $green-basic;
+  opacity: 0.5;
+}
+
+.social__link:active .social__icon--fb {
   stroke: $green-basic;
+  fill: none;
   opacity: 0.5;
 }
