@@ -15,31 +15,18 @@ const svgstore = require("gulp-svgstore");
 //const path = require("path");
 //const htmlmin2 = require("gulp-html-minifier-terser");
 const del = require("del");
+const svgmin = require('gulp-svgmin');
+const cheerio = require('gulp-cheerio');
+const replace = require('gulp-replace');
 
 
 //HTML
 
-//const html = () => {
-//  return gulp.src("sourse/*.html")
-//    .pipe(htmlmin2({ collapseWhitespace: true }))
-//    .pipe(gulp.dest("build/html"));
-//}
-//
-//exports.html = html;
-
-//const html = () => {
-//  return gulp.src("sourse/*.html")
-//    .pipe(htmlmin({ collapseWhitespace: true }))
-//    .pipe(gulp.dest("build"));
-//}
-
-
-
-const html = ('minify', () => {
-  return gulp.src("sourse/*.html")
+const html = () => {
+  return gulp.src("source/*.html")
     .pipe(htmlmin({ collapseWhitespace: true }))
-    .pipe(gulp.dest('build'));
-});
+    .pipe(gulp.dest("build"));
+}
 
 exports.html = html;
 
@@ -103,6 +90,14 @@ exports.imagewebp = imagewebp;
 
 const svgsprite = () => {
   return gulp.src("source/img/icons/*.svg")
+    .pipe(cheerio({
+      run: function ($) {
+        $('[fill]').removeAttr('fill');
+        $('[style]').removeAttr('style');
+        $('[stroke]').removeAttr('stroke');
+      },
+      parserOptions: { xmlMode: true }
+    }))
     .pipe(svgstore({
       inlineSvg: true
     }))
@@ -112,10 +107,37 @@ const svgsprite = () => {
 
 exports.svgsprite = svgsprite;
 
+//const svgsprite = () => {
+//  return gulp.src("source/img/icons/*.svg")
+//    .pipe(svgmin({
+//      js2svg: {
+//        pretty: true
+//      }
+//    }))
+//    .pipe(cheerio({
+//      run: function ($) {
+//        $('[fill]').removeAttr('fill');
+//        $('[style]').removeAttr('style');
+//      },
+//      parserOptions: { xmlMode: true }
+//    }))
+//    .pipe(replace('&gt;', '>'))
+//    .pipe(svgstore({
+//      inlineSvg: true
+//    }))
+//    .pipe(rename("sprite.svg"))
+//    .pipe(gulp.dest("build/img/icons"));
+//}
+
+exports.svgsprite = svgsprite;
+
 //Копирование изображений для просмотра в браузере
 
 const copyImages = () => {
-  return gulp.src("source/img/**/*.{png,jpg,svg}")
+  return gulp.src([
+    "source/img/**/*.{png,jpg,svg}",
+    "!source/img/icons/*.svg"
+  ])
     .pipe(gulp.dest("build/img"))
 }
 
@@ -135,9 +157,7 @@ const copy = (done) => {
   gulp.src([
     "source/fonts/*.{woff2,woff}",
     "source/*.ico",
-    //"sourse/*.html",  проверить подгрузится ли так сервер через сборку
-  //"source/img/**/*.svg",  не понимаю зачем их копировать если плагином images прогоняем их через компрессор
-    "!source/img/icons/*.svg",
+    "!source/img/icons/*.svg"
   ], {
     base: "source"
   })
