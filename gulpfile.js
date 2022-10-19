@@ -12,13 +12,21 @@ const rename  = require("gulp-rename");
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
-//const path = require("path");
-//const htmlmin2 = require("gulp-html-minifier-terser");
 const del = require("del");
-const svgmin = require('gulp-svgmin');
+//const svgmin = require('gulp-svgmin');
 const cheerio = require('gulp-cheerio');
-const replace = require('gulp-replace');
+//const replace = require('gulp-replace');
+//const include = require('gulp-file-include');
 
+//Шаблоны шапки и футера
+
+//const includehtml = () => {
+//  return gulp.src("source/*.html")
+//  .pipe(include())
+//  .pipe(gulp.dest("build"));
+//}
+//
+//exports.includehtml = includehtml;
 
 //HTML
 
@@ -107,30 +115,6 @@ const svgsprite = () => {
 
 exports.svgsprite = svgsprite;
 
-//const svgsprite = () => {
-//  return gulp.src("source/img/icons/*.svg")
-//    .pipe(svgmin({
-//      js2svg: {
-//        pretty: true
-//      }
-//    }))
-//    .pipe(cheerio({
-//      run: function ($) {
-//        $('[fill]').removeAttr('fill');
-//        $('[style]').removeAttr('style');
-//      },
-//      parserOptions: { xmlMode: true }
-//    }))
-//    .pipe(replace('&gt;', '>'))
-//    .pipe(svgstore({
-//      inlineSvg: true
-//    }))
-//    .pipe(rename("sprite.svg"))
-//    .pipe(gulp.dest("build/img/icons"));
-//}
-
-exports.svgsprite = svgsprite;
-
 //Копирование изображений для просмотра в браузере
 
 const copyImages = () => {
@@ -166,8 +150,6 @@ const copy = (done) => {
 }
 
 exports.copy = copy;
-
-
 
 // Server
 
