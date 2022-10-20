@@ -76,6 +76,7 @@ const images = () => {
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.mozjpeg({quality: 75, progressive: true}),
+      imagemin.jpegtran({progressive: true}),
       imagemin.svgo()
   ]))
   .pipe(gulp.dest("build/img"))

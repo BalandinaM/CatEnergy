@@ -2,13 +2,13 @@
   position: relative;
 
   @media (max-width: $mobile-max-width) {
-    background-image: url("../../../../../img/promo-background-cat.jpg");
+    background-image: url("../../../../../img/promo-background-cat.webp");
     background-repeat: no-repeat;
     background-size: 100% 302px;
     background-position: center top;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../../../../img/promo-background-cat@2x.jpg");
+      background-image: url("../../../../../img/promo-background-cat@2x.webp");
     }
   }
 
@@ -108,7 +108,7 @@
 
 .promo__img {
   width: 280px;
-  height: 273px;
+  height: 270px;
 
   display: block;
   position: relative;
