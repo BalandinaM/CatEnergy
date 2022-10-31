@@ -1,0 +1,27 @@
+.form__contacts {
+  position: relative;
+
+  padding-left: 20px;
+  padding-top: 68px;
+  padding-bottom: 34px;
+  padding-right: 20px;
+  border-top: 2px solid $green-basic;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 88px;
+    padding-bottom: 86px;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 88px;
+    padding-bottom: 89px;
+    padding-left: 110px;
+    padding-right: 110px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 80px;
+  }
+}

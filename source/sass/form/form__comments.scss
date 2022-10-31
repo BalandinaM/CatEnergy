@@ -50,26 +50,3 @@
     left: 70px;
   }
 }
-
-.form__input--textarea {
-  padding-top: 18px;
-  margin-left: 0;
-
-  flex-grow: 1;
-
-  @media (min-width: $tablet-width) {
-    padding-top: 14px;
-
-    height: 174px;
-  }
-}
-
-.form__input--textarea::placeholder {
-  font-size: 15px;
-  line-height: 16px;
-
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 30px;
-  }
-}

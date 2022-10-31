@@ -1,0 +1,32 @@
+.form__additionally {
+  position: relative;
+
+  padding-top: 37px;
+  padding-bottom: 28px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-top: 2px solid $green-basic;
+
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 53px;
+    padding-bottom: 36px;
+    padding-left: 70px;
+    padding-right: 70px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 42px;
+    padding-left: 110px;
+    padding-right: 110px;
+
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
+  }
+}

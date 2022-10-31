@@ -1,5 +1,7 @@
 // Global
 
+
+@import "global/normalize.scss";
 @import "global/variables.scss";
 @import "global/fonts.scss";
 @import "global/global.scss";
@@ -7,31 +9,32 @@
 
 // Blocks
 
-@import "index/page-body/page-body.scss";
-@import "index/page-body/button.scss";
-@import "index/page-body/page-header/page-header.scss";
-@import "index/page-body/page-header/main-nav.scss";
-@import "index/page-body/page-header/promo/promo.scss";
-@import "index/page-body/page-main/program-options.scss";
-@import "index/page-body/page-main/advantages.scss";
-@import "index/page-body/page-main/example/example.scss";
-@import "index/page-body/page-main/example/description/description.scss";
-@import "index/page-body/page-main/example/description/stats.scss";
-@import "index/page-body/page-main/example/slider/slider.scss";
-@import "index/page-body/page-main/example/slider/range.scss";
-@import "index/page-body/page-footer/page-footer.scss";
-@import "index/page-body/page-footer/location.scss";
-@import "index/page-body/page-footer/contacts/contacts.scss";
-@import "index/page-body/page-footer/contacts/copyright/copyright.scss";
-@import "index/page-body/page-footer/contacts/social/social.scss";
+@import "index/page-body.scss";
+@import "index/button.scss";
+@import "index/page-header-and-promo-wrapper/page-header/page-header.scss";
+@import "index/page-header-and-promo-wrapper/page-header/main-nav.scss";
+@import "index/page-header-and-promo-wrapper/promo/promo.scss";
+@import "index/page-main/program-options.scss";
+@import "index/page-main/advantages.scss";
+@import "index/page-main/example/example.scss";
+@import "index/page-main/example/description/description.scss";
+@import "index/page-main/example/description/stats.scss";
+@import "index/page-main/example/slider/slider.scss";
+@import "index/page-main/example/slider/range.scss";
+@import "index/page-footer/page-footer.scss";
+@import "index/page-footer/location.scss";
+@import "index/page-footer/contacts/contacts.scss";
+@import "index/page-footer/contacts/copyright/copyright.scss";
+@import "index/page-footer/contacts/social/social.scss";
 @import "form/page-main.scss";
 @import "form/form.scss";
 @import "form/form__basic-info.scss";
 @import "form/form__purpose.scss";
-@import "form/form__contacts.scss";
+@import "form/form__contacts/form__contacts.scss";
+@import "form/form__contacts/contacts.scss";
 @import "form/form__comments.scss";
-@import "form/form__additionally.scss";
+@import "form/form__additionally/form__additionally.scss";
+@import "form/form__additionally/additionally.scss";
 @import "catalog/catalog.scss";
 @import "catalog/catalog__item.scss";
 @import "catalog/additional-product.scss";
-@import "catalog/additional-product__item.scss";
