@@ -9,6 +9,7 @@
     "gulp": "^4.0.2",
     "gulp-cheerio": "^1.0.0",
     "gulp-file-include": "^2.3.0",
+    "gulp-gh-pages": "^0.5.4",
     "gulp-html-minifier-terser": "^7.0.0-beta.0",
     "gulp-htmlmin": "^5.0.1",
     "gulp-imagemin": "^7.1.0",
@@ -33,7 +34,7 @@
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
-    "build": "gulp styles",
+    "build": "gulp build",
     "start": "gulp"
   },
   "browserslist": [

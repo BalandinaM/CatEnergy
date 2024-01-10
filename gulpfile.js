@@ -226,3 +226,4 @@ exports.default = gulp.series(
 );
 
 //webmanifest не нужно копировать в папку сборки?!
+

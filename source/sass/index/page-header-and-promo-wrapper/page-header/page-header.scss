@@ -4,9 +4,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../../../../../img/promo-background-cat-desktop.jpg");
-    //background-image: image-set(url("../../../../../img/promo-background-cat-desktop.webp") type("image/webp"),
-    //                            url("../../../../../img/promo-background-cat-desktop.jpg") type("image/jpeg"));
+    background-image: url("../img/promo-background-cat-desktop.jpg");
     background-repeat: no-repeat;
     background-size: 50vw 694px;
     background-position: right top;
@@ -16,9 +14,7 @@
     margin-bottom: 82px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../../../img/promo-background-cat@2x_desktop.jpg");
-      //background-image: image-set(url("../../../../img/promo-background-cat@2x_desktop.webp") type("image/webp"),
-      //                            url("../../../../img/promo-background-cat@2x_desktop.jpg") type("image/jpeg"));
+      background-image: url("../img/promo-background-cat@2x_desktop.jpg");
     }
   }
 }

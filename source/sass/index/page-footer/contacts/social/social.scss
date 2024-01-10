@@ -53,14 +53,15 @@
   fill: $green-basic;
 }
 
-.social__link:hover .social__icon--fb,
-.social__link:focus .social__icon--fb {
-  stroke: $green-basic;
-}
-
 .social__link:active .social__icon {
   fill: $green-basic;
   opacity: 0.5;
+}
+
+.social__link:hover .social__icon--fb,
+.social__link:focus .social__icon--fb {
+  fill: none;
+  stroke: $green-basic;
 }
 
 .social__link:active .social__icon--fb {
